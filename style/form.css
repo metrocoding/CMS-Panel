@@ -1,0 +1,176 @@
+﻿.form {
+    background: #333;
+    border-radius: 2px;
+    padding-bottom: 40px;
+}
+
+    .form > h2 {
+        background: #6200EA;
+        font-family: sam;
+        font-weight: normal;
+        color: #fff;
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+        padding: 7px 0;
+        border-radius: 0 0 3px 3px;
+        line-height: 40px;
+        height: 50px;
+    }
+
+    .form > #error {
+        width: 80%;
+        margin: 50px auto;
+        color: #FF6D00;
+    }
+
+    .form > .items {
+        width: 85%;
+        margin: 10px 60px 40px auto;
+        background: #333;
+        padding: 4px;
+        border-radius: 3px;
+        position: relative;
+    }
+
+        .form > .items > .title {
+            background: #00BA00;
+            top: -27px;
+            color: #fff;
+            position: absolute;
+            padding: 3px 7px;
+            width: 100px;
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            right: 4px;
+            text-align: center;
+            font-family: sam;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .form > .items > .tt {
+            border-radius: 3px;
+            position: relative;
+            top: 0;
+        }
+
+        .form > .items > .tt2 {
+            border-radius: 3px 3px 0 0;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+
+        .form > .items > input:hover {
+            transition: 0.3s;
+        }
+
+
+        .form > .items > input {
+            transition: 0.3s;
+            width: 93%;
+            background: #fff;
+            border: 0 none;
+            height: 40px;
+            text-indent: 10px;
+            font-family: sam;
+            font-size: 14px;
+            border-radius: 3px 0 3px 3px;
+        }
+
+        .form > .items > select {
+            width: 93%;
+            background: #fff;
+            border: 0 none;
+            height: 42px;
+            text-align: center;
+            font-family: sam;
+            font-size: 15px;
+            border-radius: 3px 0 3px 3px;
+        }
+
+            .form > .items > select > option {
+                font-family: sam;
+                font-size: 12px;
+            }
+
+
+        .form > .items > input[type=file] {
+            display: none;
+        }
+
+            .form > .items > input[type=file] + label {
+                display: inline-block;
+                width: 93%;
+                background: url("../images/Micon/upl.png") #BD0032 no-repeat 5% 50%;
+                background-size: auto auto;
+                background-size: auto auto;
+                background-size: 30px;
+                cursor: pointer;
+                line-height: 40px;
+                color: #fff;
+                border: 0 none;
+                height: 42px;
+                text-align: center;
+                font-family: sam;
+                font-size: 17px;
+                border-radius: 3px 0 3px 3px;
+            }
+
+        .form > .items > textarea {
+            width: 93%;
+            min-width: 93%;
+            max-width: 93%;
+            height: 180px;
+            min-height: 180px;
+            display: block;
+            border: 0 none;
+            border-radius: 3px 0 3px 3px;
+            padding-top: 10px;
+            font-family:sam;
+            font-size:15px;
+            color:#444;
+        }
+
+        .form > .items.no_color {
+            background: transparent;
+            margin: 20px 60px 70px auto;
+        }
+
+
+
+
+
+        .form > .items > input[type=radio] {
+            display: none;
+        }
+
+            .form > .items > input[type=radio] + label:hover {
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+            .form > .items > input[type=radio] + label {
+                background: url("../images/Micon/uncheck.png") no-repeat 90% 50%;
+                background-size: 30px;
+                margin-right: 50px;
+                color: #fff;
+                padding-right: 40px;
+            }
+
+            .form > .items > input[type=radio]:checked + label {
+                background: url("../images/Micon/check.png") no-repeat 90% 50%;
+                background-size: 30px;
+            }
+
+        .form > .items > input[type=submit] {
+            font-size: 16px;
+            margin: 1px 5px;
+            text-align: center;
+            text-indent: 0;
+            background: linear-gradient(#fff,#ccc);
+            cursor: pointer;
+            width: 20%;
+            border-radius: 3px;
+        }

@@ -1,0 +1,9 @@
+﻿@font-face {
+    font-family: samb;
+    src: url('../fonts/Samim-Bold-FD.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: sam;
+    src: url('../fonts/Samim-FD.ttf') format('truetype');
+}
