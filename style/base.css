@@ -1,8 +1,8 @@
 ﻿body {
-    margin:0;
-    direction:rtl;
-    font-family:sam;
-    color:#555;
+    margin: 0;
+    direction: rtl;
+    font-family: sam;
+    color: #555;
 }
 
 #header {
@@ -22,6 +22,6 @@
 
 #footer {
     border-top:5px solid #ccc;
-    background:#999;
+    background:#333;
     height:200px;
 }

@@ -18,7 +18,7 @@ using System.IO;
 public partial class admin_slide_add_slide : System.Web.UI.Page
 {
 
-    string cs = WebConfigurationManager.ConnectionStrings["all"].ConnectionString;
+    string connectionAddress = WebConfigurationManager.ConnectionStrings["all"].ConnectionString;
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -63,30 +63,30 @@ public partial class admin_slide_add_slide : System.Web.UI.Page
 
 
 
-        SqlConnection con = new SqlConnection(cs);
+        SqlConnection connection = new SqlConnection(connectionAddress);
 
-        SqlCommand cmd = new SqlCommand("insert into slide values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", con);
+        SqlCommand command = new SqlCommand("insert into slide values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", connection);
 
-        cmd.Parameters.AddWithValue("@p1", sli_title.Value);
-        cmd.Parameters.AddWithValue("@p2", sli_start.Value);
-        cmd.Parameters.AddWithValue("@p3", sli_end.Value);
-        cmd.Parameters.AddWithValue("@p4", sli_order.Value);
-        cmd.Parameters.AddWithValue("@p5", sli_page.Value);
-        cmd.Parameters.AddWithValue("@p6", show.Checked);
-        cmd.Parameters.AddWithValue("@p7", fileName);
-        cmd.Parameters.AddWithValue("@p8", sli_des.Value);
-        cmd.Parameters.AddWithValue("@p9", sha);
+        command.Parameters.AddWithValue("@p1", sli_title.Value);
+        command.Parameters.AddWithValue("@p2", sli_start.Value);
+        command.Parameters.AddWithValue("@p3", sli_end.Value);
+        command.Parameters.AddWithValue("@p4", sli_order.Value);
+        command.Parameters.AddWithValue("@p5", sli_page.Value);
+        command.Parameters.AddWithValue("@p6", show.Checked);
+        command.Parameters.AddWithValue("@p7", fileName);
+        command.Parameters.AddWithValue("@p8", sli_des.Value);
+        command.Parameters.AddWithValue("@p9", sha);
 
         try
         {
-            con.Open();
-            cmd.ExecuteNonQuery();
+            connection.Open();
+            command.ExecuteNonQuery();
             error.InnerHtml = "با موفقیت ثبت شد";
         }
         //catch { }
         finally
         {
-            con.Close();
+            connection.Close();
         }
     }
 

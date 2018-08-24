@@ -57,7 +57,7 @@
                         <div class="items item17">
                             <span class="title">ارسال فایل</span>
                             <input type="file" id="mes_attach" runat="server" />
-                            <label for="album_art">آپلود فایل</label>
+                            <label for="mes_attach">آپلود فایل</label>
                         </div>
 
                         <div class="items item7">
@@ -66,8 +66,8 @@
                         </div>
 
                         <div class="items item8">
-                            <input type="submit" value="ارسال" runat="server" />
-                            <input type="submit" value="پاک کردن" runat="server"  />
+                            <input type="submit" value="ارسال" runat="server" onserverclick="send_mes"/>
+                            <input type="submit" value="پاک کردن" runat="server"  onserverclick="clear_form"/>
                         </div>
 
 

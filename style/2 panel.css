@@ -2,17 +2,24 @@
     padding-bottom: 50px;
     width: 1360px;
     /*height:900px;*/
-    margin: 30px auto;
+    margin: 30px auto 0;
     overflow: hidden;
     /*border:1px solid #ccc;*/
 }
 
     #content > .holder > .right {
+        /*transition:0.5s;*/
         width: 23%;
-        border: 1px solid #ccc;
+        /*border: 1px solid #ccc;*/
         height: 700px;
         float: right;
+        border-radius: 3px;
+        background-color:#333;
     }
+
+
+
+
 
     #content > .holder > .center {
         width: 73.5%;

@@ -88,8 +88,8 @@
                         </div>
 
                         <div class="items item8">
-                            <input type="submit" value="افزودن" runat="server" />
-                            <input type="submit" value="پاک کردن" runat="server"  />
+                            <input type="submit" value="افزودن" runat="server" onserverclick="adding"/>
+                            <input type="submit" value="پاک کردن" runat="server"  onserverclick="resetform"/>
                         </div>
 
 
