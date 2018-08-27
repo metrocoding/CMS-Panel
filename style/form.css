@@ -34,7 +34,10 @@
         position: relative;
     }
     /*new=============================start==========================*/
-    .form > .items.item1, .form > .items.item4, .form > .items.item9, .form > .items.item12 {
+    .form > .items.item1,
+    .form > .items.item4,
+    .form > .items.item9,
+    .form > .items.item12 {
         width: 23%;
         margin: 10px 60px 40px 0;
         display: inline-block;
@@ -69,6 +72,19 @@
         display: inline-block;
         padding-left: 30px;
     }
+
+.items.item18 {
+    display: inline-block;
+    width: 51%;
+    margin: 10px 60px 40px auto;
+}
+
+.items.item19 {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 30px 40px auto;
+}
+
     /*new=============================end==========================*/
     .form > .items > .title {
         background: #00BA00;
