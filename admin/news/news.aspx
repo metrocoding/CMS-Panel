@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="news.aspx.cs" Inherits="admin_news_news" %>
 
+<%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -25,6 +28,7 @@
 
                 <div class="right">
                     <!-- accardion  -->
+                    <uc1:admin_accar runat="server" ID="admin_accar" />
                 </div>
 
                 <div class="center">

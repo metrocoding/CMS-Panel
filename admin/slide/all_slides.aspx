@@ -31,7 +31,7 @@
             </div>
 
             <div class="center">
-                <div class="grid">
+                <div class="grid" id="grid" runat="server">
                     <h2>مشاهده اسلاید</h2>
 
                     <ul class="items header">
@@ -42,72 +42,6 @@
                         <li>اولویت</li>
                         <li>وضعیت</li>
                         <li>ویرایش</li>
-                    </ul>
-
-
-                    <ul class="items slidegrid">
-                        <li class="pic"><img src="../../images/uploads/news/full/81680_Screenshot (2).png"/></li>
-                        <li>عنوان</li>
-                        <li class="date">1397/02/02</li>
-                        <li class="date">1397/02/02</li>
-                        <li>اخبار</li>
-                        <li>30</li>
-                        <li>بلی</li>
-                        <li class="edit"><a></a></li>
-
-                        <li class="del"> </li>
-                    </ul>
-
-                    <ul class="items slidegrid">
-                        <li class="pic"><img src="../../images/uploads/news/full/81680_Screenshot (2).png"/></li>
-                        <li>عنوان</li>
-                        <li class="date">1397/02/02</li>
-                        <li class="date">1397/02/02</li>
-                        <li>اخبار</li>
-                        <li>30</li>
-                        <li>بلی</li>
-                        <li class="edit"><a></a></li>
-
-                        <li class="del"> </li>
-                    </ul>
-
-                    <ul class="items slidegrid">
-                        <li class="pic"><img src="../../images/uploads/news/full/81680_Screenshot (2).png"/></li>
-                        <li>عنوان</li>
-                        <li class="date">1397/02/02</li>
-                        <li class="date">1397/02/02</li>
-                        <li>اخبار</li>
-                        <li>30</li>
-                        <li>بلی</li>
-                        <li class="edit"><a></a></li>
-
-                        <li class="del"> </li>
-                    </ul>
-
-                    <ul class="items slidegrid">
-                        <li class="pic"><img src="../../images/uploads/news/full/81680_Screenshot (2).png"/></li>
-                        <li>عنوان</li>
-                        <li class="date">1397/02/02</li>
-                        <li class="date">1397/02/02</li>
-                        <li>اخبار</li>
-                        <li>30</li>
-                        <li>بلی</li>
-                        <li class="edit"><a></a></li>
-
-                        <li class="del"> </li>
-                    </ul>
-
-                    <ul class="items slidegrid">
-                        <li class="pic"><img src="../../images/uploads/news/full/81680_Screenshot (2).png"/></li>
-                        <li>عنوان</li>
-                        <li class="date">1397/02/02</li>
-                        <li class="date">1397/02/02</li>
-                        <li>اخبار</li>
-                        <li>30</li>
-                        <li>بلی</li>
-                        <li class="edit"><a></a></li>
-
-                        <li class="del"> </li>
                     </ul>
 
 
