@@ -1,2 +1,199 @@
-﻿body {
+﻿.grid {
+    background: #333;
+    border-radius: 2px;
+    padding-bottom: 40px;
 }
+
+    .grid > h2 {
+        background: #6200EA;
+        font-family: sam;
+        font-weight: normal;
+        color: #fff;
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+        padding: 7px 0;
+        border-radius: 0 0 3px 3px;
+        line-height: 40px;
+        height: 50px;
+    }
+
+    .grid > .items {
+        transition: 0.3s;
+        margin: 0 30px;
+        padding: 3px;
+        list-style: none;
+        /*border-bottom: 1px solid #ccc;
+        background: #fff;*/
+        font-family: sam;
+        font-size: 19px;
+        height: 44px;
+    }
+
+    .grid > .header {
+        padding: 40px 60px 10px 0;
+        font-family: sam;
+        font-size: 16px;
+        margin: 30px 30px 0;
+        height: 20px;
+    }
+
+    .grid > .items.slidegrid:hover {
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+
+    .grid > .items.slidegrid {
+        margin-bottom: 5px;
+        transition: 0.3s;
+        font-size: 14px;
+        background-color: rgba(240,240,240,1);
+        border-radius: 3px;
+        color: #000;
+    }
+
+        .grid > .items.slidegrid > li:not(.pic) {
+            top: -16px;
+            margin-right: 5px;
+            /*border:1px solid red;*/
+        }
+
+        .grid > .items.slidegrid > li:nth-child(2) {
+            width: 190px;
+        }
+
+        .grid > .items.slidegrid > li:nth-child(3) {
+            width: 90px;
+        }
+
+        .grid > .items.slidegrid > li:nth-child(4) {
+            width: 90px;
+        }
+
+        .grid > .items.slidegrid > li:nth-child(5) {
+            margin-right: 26px;
+        }
+
+        .grid > .items.slidegrid > li:nth-child(6) {
+            margin-right: 30px;
+        }
+
+        .grid > .items.slidegrid > li:nth-child(7) {
+            margin-right: 31px;
+        }
+
+
+    .grid > .items.header > li {
+        transition: 0.3s;
+        display: inline-block;
+        width: 80px;
+        /*height: 30px;*/
+        font-size: 18px;
+        text-align: center;
+        border-radius: 3px;
+        background: #8bc34a;
+        color: #fff;
+    }
+
+        .grid > .items.header > li:nth-child(1) {
+            margin-right: 50px;
+        }
+
+        .grid > .items.header > li:nth-child(2) {
+            margin-right: 65px;
+        }
+
+        .grid > .items.header > li:nth-child(3) {
+            margin-right: 14px;
+        }
+
+        .grid > .items.header > li:nth-child(4) {
+            margin-right: 30px;
+        }
+
+        .grid > .items.header > li:nth-child(5) {
+            margin-right: 30px;
+        }
+
+        .grid > .items.header > li:nth-child(6) {
+            margin-right: 30px;
+        }
+
+        .grid > .items.header > li:nth-child(7) {
+            margin-right: 30px;
+        }
+
+    .grid > .items > li {
+        transition: 0.3s;
+        display: inline-block;
+        width: 80px;
+        /*height: 30px;*/
+        text-align: center;
+    }
+
+        .grid > .items > li.pic {
+            width: 43px;
+            height: 43px;
+        }
+
+        .grid > .items > li:not(.pic) {
+            position: relative;
+            top: -12px;
+        }
+
+    .grid > .items:hover > li.pic > img {
+        transition: 0.3s;
+        border-radius: 100%;
+    }
+
+    .grid > .items > li.pic > img:hover {
+        transition: 0.3s;
+        transform: scale(5);
+    }
+
+    .grid > .items > li.pic > img {
+        transition: 0.3s;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+    }
+
+    .grid > .items > li.date {
+        width: 110px;
+    }
+
+    .grid > .items.slidegrid > li.edit:hover {
+        transition: 0.3s;
+    }
+
+    .grid > .items.slidegrid > li.edit {
+        transition: 0.3s;
+        width: 30px;
+        height: 30px;
+        background: url("../images/Micon/edit.png") no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        top: -5px;
+        margin-right: 31px;
+    }
+
+    .grid > .items > li.edit > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid > .items.slidegrid > li.del:hover {
+        transition: 0.3s;
+    }
+
+    .grid > .items.slidegrid > li.del {
+        transition: 0.3s;
+        width: 30px;
+        height: 30px;
+        background: url("../images/Micon/del.png") no-repeat 0% 100%;
+        background-size: 30px;
+        cursor: pointer;
+        margin-right: 10px;
+        top: -6px;
+    }

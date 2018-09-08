@@ -1,0 +1,59 @@
+﻿#content > .holder {
+    width: 500px;
+    margin: 0px auto;
+    direction: ltr;
+}
+
+    #content > .holder > .center {
+        width: 100%;
+    }
+
+.form {
+    direction: rtl;
+    padding-bottom: 30px;
+    width: 485px;
+}
+
+    .form > img {
+        width: 100px;
+        margin: 50px auto;
+        display: block;
+    }
+
+    .form > #error {
+        text-indent: 20px;
+        width: 80%;
+        margin: 10px auto 70px;
+        color: #8bc34a;
+    }
+
+    .form > .items {
+        background: transparent;
+        width: 70%;
+        margin-bottom: 60px;
+    }
+
+        .form > .items > input {
+            border: 1px solid #ddd;
+            width: 100%;
+            border: 0 none;
+        }
+
+        .form > .items > .title {
+            width: 100px;
+            height: 25px;
+            padding: 3px 7px;
+            top: -41px;
+            display: inline-block;
+            background: blue;
+            color: #fff;
+            text-align: center;
+            padding: 10px 5px;
+        }
+
+
+
+        .form > .items > input[type="submit"] {
+            width:110px;
+            margin:0;
+        }

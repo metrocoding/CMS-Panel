@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="admin.aspx.cs" Inherits="admin_admin" %>
 
+<%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+
+
 
 <!DOCTYPE html>
 
@@ -16,13 +19,27 @@
 </head>
 <body>
 
-    <div id="header"></div>
+    <div id="header">
+
+
+                <a class="home" href="admin.aspx">
+                    <img src="../images/Micon/home.png" /></a>
+                <img id="user_pic" runat="server" src="../images/Micon/avatar.png" />
+
+                <h2>پنل ادمین کل</h2>
+                <h2 class="wel">وقت بخیر <span id="wel" runat="server">کاربر</span></h2>
+
+    </div>
+
     <div id="content">
 
         <div class="holder">
 
             <div class="right">
                 <!-- accardion  -->
+
+                <uc1:admin_accar runat="server" ID="admin_accar" />
+
             </div>
 
             <div class="center">
@@ -37,7 +54,7 @@
         </div>
 
     </div>
-    
+
     <div id="footer"></div>
 
 

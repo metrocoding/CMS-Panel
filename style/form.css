@@ -33,45 +33,45 @@
         border-radius: 3px;
         position: relative;
     }
-    /*new=============================start==========================*/
-    .form > .items.item1,
-    .form > .items.item4,
-    .form > .items.item9,
-    .form > .items.item12 {
-        width: 23%;
-        margin: 10px 60px 40px 0;
-        display: inline-block;
-        padding-left: 30px;
-    }
+        /*new=============================start==========================*/
+        .form > .items.item1,
+        .form > .items.item4,
+        .form > .items.item9,
+        .form > .items.item12 {
+            width: 23%;
+            margin: 10px 60px 40px 0;
+            display: inline-block;
+            padding-left: 30px;
+        }
 
 
-    .form > .items.item2, .form > .items.item3, .form > .items.item5, .form > .items.item6, .form > .items.item10, .form > .items.item11, .form > .items.item13 {
-        width: 23%;
-        margin: 10px 30px 40px 0;
-        display: inline-block;
-        padding-left: 30px;
-    }
+        .form > .items.item2, .form > .items.item3, .form > .items.item5, .form > .items.item6, .form > .items.item10, .form > .items.item11, .form > .items.item13 {
+            width: 23%;
+            margin: 10px 30px 40px 0;
+            display: inline-block;
+            padding-left: 30px;
+        }
 
-    .form > .items.item7 {
-        margin: 10px 60px 10px 0;
-        padding-left: 30px;
-        width: 83.4%;
-    }
+        .form > .items.item7 {
+            margin: 10px 60px 10px 0;
+            padding-left: 30px;
+            width: 83.4%;
+        }
 
 
-    .form > .items.item14, .form > .items.item16 {
-        width: 38%;
-        margin: 10px 60px 40px 0;
-        display: inline-block;
-        padding-left: 30px;
-    }
+        .form > .items.item14, .form > .items.item16 {
+            width: 38%;
+            margin: 10px 60px 40px 0;
+            display: inline-block;
+            padding-left: 30px;
+        }
 
-    .form > .items.item15, .form > .items.item17 {
-        width: 38%;
-        margin: 10px 30px 40px 0;
-        display: inline-block;
-        padding-left: 30px;
-    }
+        .form > .items.item15, .form > .items.item17 {
+            width: 38%;
+            margin: 10px 30px 40px 0;
+            display: inline-block;
+            padding-left: 30px;
+        }
 
 .items.item18 {
     display: inline-block;
@@ -85,64 +85,70 @@
     margin: 10px 30px 40px auto;
 }
 
-    /*new=============================end==========================*/
-    .form > .items > .title {
-        background: #00BA00;
-        top: -27px;
-        color: #fff;
-        position: absolute;
-        padding: 3px 7px;
-        width: 100px;
-        display: inline-block;
-        height: 25px;
-        line-height: 25px;
-        right: 4px;
-        text-align: center;
-        font-family: sam;
-        border-radius: 3px 3px 0 0;
-    }
+/*new=============================end==========================*/
 
-    .form > .items > .tt {
-        border-radius: 3px;
-        position: relative;
-        top: 0;
-    }
+.form > .items > img {
+    width: 100%;
+    display:block;
+}
 
-    .form > .items > .tt2 {
-        border-radius: 3px 3px 0 0;
-        position: relative;
-        top: 0;
-        right: 0;
-    }
+.form > .items > .title {
+    background: #00BA00;
+    top: -27px;
+    color: #fff;
+    position: absolute;
+    padding: 3px 7px;
+    width: 100px;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    right: 4px;
+    text-align: center;
+    font-family: sam;
+    border-radius: 3px 3px 0 0;
+}
 
-    .form > .items > input:hover {
-        transition: 0.3s;
-    }
+.form > .items > .tt {
+    border-radius: 3px;
+    position: relative;
+    top: 0;
+}
+
+.form > .items > .tt2 {
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.form > .items > input:hover {
+    transition: 0.3s;
+}
 
 
-    .form > .items > input {
-        transition: 0.3s;
-        width: 100%;
-        background: #fff;
-        border: 0 none;
-        height: 40px;
-        text-indent: 10px;
-        font-family: sam;
-        font-size: 14px;
-        border-radius: 3px 0 3px 3px;
-    }
+.form > .items > input {
+    transition: 0.3s;
+    width: 100%;
+    background: #fff;
+    border: 0 none;
+    height: 40px;
+    text-indent: 10px;
+    font-family: sam;
+    font-size: 14px;
+    border-radius: 3px 0 3px 3px;
+}
 
-    .form > .items > select {
-        width: 100%;
-        background: #fff;
-        border: 0 none;
-        height: 42px;
-        text-align: center;
-        font-family: sam;
-        font-size: 14px;
-        border-radius: 3px 0 3px 3px;
-        color: #666;
-    }
+.form > .items > select {
+    width: 100%;
+    background: #fff;
+    border: 0 none;
+    height: 42px;
+    text-align: center;
+    font-family: sam;
+    font-size: 14px;
+    border-radius: 3px 0 3px 3px;
+    color: #666;
+}
 
     .form > .items > select > option {
         font-family: sam;
@@ -150,14 +156,14 @@
     }
 
 
-    .form > .items > input[type=file] {
-        display: none;
-    }
+.form > .items > input[type=file] {
+    display: none;
+}
 
     .form > .items > input[type=file] + label {
         display: inline-block;
         width: 100%;
-        background: url("../images/Micon/upl.png") #BD0032 no-repeat 5% 50%;
+        background: url("../images/Micon/upl.png") blue no-repeat 5% 50%;
         background-size: auto auto;
         background-size: auto auto;
         background-size: 30px;
@@ -172,36 +178,36 @@
         border-radius: 3px 0 3px 3px;
     }
 
-    .form > .items > textarea {
-        margin-top: 0;
-        width: 99%;
-        min-width: 99%;
-        max-width: 99%;
-        height: 180px;
-        min-height: 180px;
-        display: block;
-        border: 0 none;
-        border-radius: 3px 0 3px 3px;
-        padding-top: 10px;
-        font-family: sam;
-        font-size: 15px;
-        color: #444;
-    }
+.form > .items > textarea {
+    margin-top: 0;
+    width: 99%;
+    min-width: 99%;
+    max-width: 99%;
+    height: 180px;
+    min-height: 180px;
+    display: block;
+    border: 0 none;
+    border-radius: 3px 0 3px 3px;
+    padding-top: 10px;
+    font-family: sam;
+    font-size: 15px;
+    color: #444;
+}
 
-    .form > .items.no_color {
-        background: transparent;
-        margin: 0px 60px 20px auto;
-        display: inline-block;
-        width: 50%;
-    }
-
-
+.form > .items.no_color {
+    background: transparent;
+    margin: 0px 60px 20px auto;
+    display: inline-block;
+    width: 50%;
+}
 
 
 
-    .form > .items > input[type=radio] {
-        display: none;
-    }
+
+
+.form > .items > input[type=radio] {
+    display: none;
+}
 
     .form > .items > input[type=radio] + label:hover {
         transition: 0.3s;
@@ -221,13 +227,13 @@
         background-size: 30px;
     }
 
-    .form > .items > input[type=submit] {
-        font-size: 16px;
-        margin: 1px 5px;
-        text-align: center;
-        text-indent: 0;
-        background: linear-gradient(#fff,#ccc);
-        cursor: pointer;
-        width: 20%;
-        border-radius: 3px;
-    }
+.form > .items > input[type=submit] {
+    font-size: 16px;
+    margin: 1px 5px;
+    text-align: center;
+    text-indent: 0;
+    background: linear-gradient(#fff,#ccc);
+    cursor: pointer;
+    width: 20%;
+    border-radius: 3px;
+}

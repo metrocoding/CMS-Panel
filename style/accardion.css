@@ -1,2 +1,80 @@
-﻿body {
+﻿#accardion {
+    /*border: 1px solid #ccc;*/
+    padding: 7px;
+    margin: 0;
+    list-style: none;
+    direction: rtl;
+    font-family: sam;
+    color: #555;
+    /*box-shadow: 0 0 10px 1px #ccc;*/
+    background: #6200EA;
+    border-radius: 3px;
 }
+
+
+    #accardion > li {
+        background: #333;
+        /*margin-bottom: 5px;*/
+        padding: 7px;
+        /*border-radius: 3px;*/ padding-top: 11px;
+    }
+
+        #accardion > li:last-child {
+            margin: 0;
+        }
+
+        #accardion > li > input {
+            display: none;
+        }
+
+            #accardion > li > input:checked + label {
+                transition: 0.3s;
+                background: #00BA00 url("../images/Micon/minus.png") no-repeat 97% 50%;
+                background-size: 25px;
+                border-radius: 3px 3px 0 0;
+            }
+
+            #accardion > li > input:checked ~ .content {
+                transition: 0.3s;
+                height: 110px;
+                margin-top: 2px;
+            }
+
+
+        #accardion > li > label {
+            transition: 0.3s;
+            background: #777 url("../images/Micon/plus.png") no-repeat 97% 50%;
+            background-size: 25px;
+            color: #fff;
+            padding: 2px 35px 2px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #accardion > li > .content {
+            transition: 0.3s;
+            overflow: hidden;
+            transition: 0.3s;
+            background: #fff;
+            height: 0;
+            border-radius: 3px 0 3px 3px;
+        }
+
+            #accardion > li > .content > a:hover {
+                transition: 0.3s;
+                background: rgba(220,220,220,1);
+                border-right: 5px solid blue;
+            }
+
+            #accardion > li > .content > a {
+                transition: 0.3s;
+                display: block;
+                background: rgba(240,240,240,1);
+                margin-top: 2px;
+                text-align: center;
+                font-family: sam;
+                text-decoration: none;
+                color: #555;
+                padding: 5px 0;
+                border-right: 0 solid blue;
+            }

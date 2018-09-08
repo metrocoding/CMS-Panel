@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="add_slide.aspx.cs" Inherits="admin_slide_add_slide" %>
 
+<%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -25,8 +28,10 @@
 
                 <div class="right">
                     <!-- accardion  -->
-                </div>
 
+                    <uc1:admin_accar runat="server" ID="admin_accar" />
+
+                </div>
                 <div class="center">
                     <div class="form">
                         <h2>افزودن اسلاید</h2>

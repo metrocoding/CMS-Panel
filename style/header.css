@@ -1,2 +1,39 @@
-﻿body {
+﻿#header:hover > a.home,
+#header:hover > img {
+    cursor:pointer;
 }
+
+#header > a.home {
+    transition: 0.3s;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+
+    #header > a.home > img {
+        width: 35px;
+    }
+
+#header > img {
+    transition: 0.3s;
+    width: 90px;
+    border: 1px solid transparent;
+    margin: 30px;
+}
+
+#header > h2 {
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#header > .wel {
+    top: 75px;
+    font-size: 18px;
+}
+
+    #header > .wel > span {
+        color: #00BA00;
+    }

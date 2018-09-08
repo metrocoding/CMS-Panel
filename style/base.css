@@ -8,8 +8,8 @@
 #header {
     border:1px solid #333;
     height:150px;
-    background:linear-gradient(#222,#333);
-    box-shadow:0 0 20px 1px #333;
+    background:#333;
+    /*box-shadow:0 0 20px 1px #333;*/
     z-index:20;
     position:relative;
 }
@@ -17,11 +17,11 @@
 #content {
     /*height: 1000px;*/
     background: #bbb;
-    border-top:1px solid transparent;
+    /*border-top:1px solid transparent;*/
 }
 
 #footer {
-    border-top:5px solid #ccc;
+    /*border-top:5px solid #ccc;*/
     background:#333;
     height:200px;
 }

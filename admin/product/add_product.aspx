@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="add_product.aspx.cs" Inherits="admin_product_add_product" %>
 
+<%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -24,6 +27,7 @@
             <div class="holder">
 
                 <div class="right">
+                    <uc1:admin_accar runat="server" ID="admin_accar" />
                 </div>
 
                 <div class="center">
