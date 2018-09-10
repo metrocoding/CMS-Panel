@@ -17,6 +17,7 @@ using System.IO;
 public partial class admin_slide_alter_slide : System.Web.UI.Page
 {
 
+
     string connectionAddress = WebConfigurationManager.ConnectionStrings["all"].ConnectionString;
 
     protected void Page_Load(object sender, EventArgs e)

@@ -136,9 +136,15 @@
     font-family: sam;
     font-size: 14px;
     border-radius: 3px 0 3px 3px;
+    border: 2px solid transparent;
 }
 
-.form > .items > select {
+    .form > .items > input:focus {
+        transition: 0.3s;
+        box-shadow: -2px 2px 1px 3px blue;
+    }
+
+    .form > .items > select {
     width: 100%;
     background: #fff;
     border: 0 none;

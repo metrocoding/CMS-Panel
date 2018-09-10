@@ -50,152 +50,331 @@
         background-color: rgba(240,240,240,1);
         border-radius: 3px;
         color: #000;
+        animation: slide 0.8s;
     }
 
-        .grid > .items.slidegrid > li:not(.pic) {
-            top: -16px;
-            margin-right: 5px;
-            /*border:1px solid red;*/
+        .grid > .items.slidegrid:nth-child(2n+1) {
+            background-color: #d5b8ff;
         }
 
-        .grid > .items.slidegrid > li:nth-child(2) {
-            width: 190px;
-        }
-
-        .grid > .items.slidegrid > li:nth-child(3) {
-            width: 90px;
-            margin-right: 13px;
-        }
-
-        .grid > .items.slidegrid > li:nth-child(4) {
-            width: 90px;
-            margin-right: 8px;
-        }
-
-        .grid > .items.slidegrid > li:nth-child(5) {
-            margin-right: 30px;
-        }
-
-        .grid > .items.slidegrid > li:nth-child(6) {
-            margin-right: 34px;
-        }
-
-        .grid > .items.slidegrid > li:nth-child(7) {
-            margin-right: 35px;
-        }
-
-
-    .grid > .items.header > li {
-        transition: 0.3s;
-        display: inline-block;
-        width: 80px;
-        /*height: 30px;*/
-        font-size: 18px;
-        text-align: center;
-        border-radius: 3px 3px 0 0;
-        background: #8bc34a;
-        color: #fff;
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
     }
 
-        .grid > .items.header > li:nth-child(1) {
-            margin-right: 50px;
-        }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
-        .grid > .items.header > li:nth-child(2) {
-            margin-right: 65px;
-        }
+.grid > .items.slidegrid > li:not(.pic) {
+    top: -16px;
+    margin-right: 5px;
+    /*border:1px solid red;*/
+}
 
-        .grid > .items.header > li:nth-child(3) {
-            margin-right: 14px;
-        }
+.grid > .items.slidegrid > li:nth-child(2) {
+    width: 190px;
+}
 
-        .grid > .items.header > li:nth-child(4) {
-            margin-right: 30px;
-        }
+.grid > .items.slidegrid > li:nth-child(3) {
+    width: 90px;
+    margin-right: 13px;
+}
 
-        .grid > .items.header > li:nth-child(5) {
-            margin-right: 30px;
-        }
+.grid > .items.slidegrid > li:nth-child(4) {
+    width: 90px;
+    margin-right: 8px;
+}
 
-        .grid > .items.header > li:nth-child(6) {
-            margin-right: 30px;
-        }
+.grid > .items.slidegrid > li:nth-child(5) {
+    margin-right: 30px;
+}
 
-        .grid > .items.header > li:nth-child(7) {
-            margin-right: 30px;
-        }
+.grid > .items.slidegrid > li:nth-child(6) {
+    margin-right: 34px;
+}
 
-    .grid > .items > li {
-        transition: 0.3s;
-        display: inline-block;
-        width: 80px;
-        /*height: 30px;*/
-        text-align: center;
+.grid > .items.slidegrid > li:nth-child(7) {
+    margin-right: 35px;
+}
+
+
+.grid > .items.header > li {
+    transition: 0.3s;
+    display: inline-block;
+    width: 80px;
+    /*height: 30px;*/
+    font-size: 18px;
+    text-align: center;
+    border-radius: 3px 3px 0 0;
+    background: #00BA00;
+    color: #fff;
+}
+
+    .grid > .items.header > li:nth-child(1) {
+        margin-right: 50px;
     }
 
-        .grid > .items > li.pic {
-            width: 43px;
-            height: 43px;
-        }
-
-        .grid > .items > li:not(.pic) {
-            position: relative;
-            top: -12px;
-        }
-
-    .grid > .items:hover > li.pic > img {
-        transition: 0.3s;
-        border-radius: 100%;
+    .grid > .items.header > li:nth-child(2) {
+        margin-right: 65px;
     }
 
-    .grid > .items > li.pic > img:hover {
-        transition: 0.3s;
-        transform: scale(5);
+    .grid > .items.header > li:nth-child(3) {
+        margin-right: 14px;
     }
 
-    .grid > .items > li.pic > img {
-        transition: 0.3s;
-        width: 100%;
-        height: 100%;
-        border-radius: 3px;
+    .grid > .items.header > li:nth-child(4) {
+        margin-right: 30px;
     }
 
-    .grid > .items > li.date {
-        width: 110px;
+    .grid > .items.header > li:nth-child(5) {
+        margin-right: 30px;
     }
 
-    .grid > .items.slidegrid > li.edit:hover {
-        transition: 0.3s;
+    .grid > .items.header > li:nth-child(6) {
+        margin-right: 30px;
     }
 
-    .grid > .items.slidegrid > li.edit {
-        transition: 0.3s;
-        width: 30px;
-        height: 30px;
-        background: url("../images/Micon/edit.png") no-repeat;
-        background-size: 30px;
-        cursor: pointer;
-        top: -5px;
-        margin-right: 40px;
+    .grid > .items.header > li:nth-child(7) {
+        margin-right: 30px;
     }
 
-    .grid > .items > li.edit > a {
+.grid > .items > li {
+    transition: 0.3s;
+    display: inline-block;
+    width: 80px;
+    /*height: 30px;*/
+    text-align: center;
+}
+
+    .grid > .items > li.pic {
+        width: 43px;
+        height: 43px;
+    }
+
+    .grid > .items > li:not(.pic) {
+        position: relative;
+        top: -12px;
+    }
+
+.grid > .items:hover > li.pic > img {
+    transition: 0.3s;
+    border-radius: 100%;
+}
+
+.grid > .items > li.pic > img:hover {
+    transition: 0.3s;
+    transform: scale(5);
+    position: relative;
+    z-index: 5;
+}
+
+.grid > .items > li.pic > img {
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.grid > .items > li.date {
+    width: 110px;
+}
+
+.grid > .items.slidegrid > li.edit:hover {
+    transition: 0.3s;
+}
+
+.grid > .items.slidegrid > li.edit {
+    transition: 0.3s;
+    width: 30px;
+    height: 30px;
+    background: url("../images/Micon/edit.png") no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+    top: -5px;
+    margin-right: 40px;
+}
+
+.grid > .items > li.edit > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.grid > .items.slidegrid > li.del:hover {
+    transition: 0.3s;
+}
+
+.grid > .items.slidegrid > li.del {
+    transition: 0.3s;
+    width: 30px;
+    height: 30px;
+    background: url("../images/Micon/del.png") no-repeat 0% 100%;
+    background-size: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    top: -6px;
+}
+
+
+/*  loader*/
+
+.cssload-container {
+    width: 87px;
+    margin: 0 auto;
+}
+
+.cssload-circle-1 {
+    height: 87px;
+    width: 87px;
+    background: rgb(97,46,141);
+}
+
+.cssload-circle-2 {
+    height: 72px;
+    width: 72px;
+    background: rgb(194,34,134);
+}
+
+.cssload-circle-3 {
+    height: 58px;
+    width: 58px;
+    background: rgb(234,34,94);
+}
+
+.cssload-circle-4 {
+    height: 43px;
+    width: 43px;
+    background: rgb(237,91,53);
+}
+
+.cssload-circle-5 {
+    height: 29px;
+    width: 29px;
+    background: rgb(245,181,46);
+}
+
+.cssload-circle-6 {
+    height: 14px;
+    width: 14px;
+    background: rgb(129,197,64);
+}
+
+.cssload-circle-7 {
+    height: 7px;
+    width: 7px;
+    background: rgb(0,163,150);
+}
+
+.cssload-circle-8 {
+    height: 4px;
+    width: 4px;
+    background: rgb(22,116,188);
+}
+
+.cssload-circle-1,
+.cssload-circle-2,
+.cssload-circle-3,
+.cssload-circle-4,
+.cssload-circle-5,
+.cssload-circle-6,
+.cssload-circle-7,
+.cssload-circle-8 {
+    border-bottom: none;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    -o-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    -ms-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    animation-name: cssload-spin;
+    -o-animation-name: cssload-spin;
+    -ms-animation-name: cssload-spin;
+    -webkit-animation-name: cssload-spin;
+    -moz-animation-name: cssload-spin;
+    animation-duration: 2000ms;
+    -o-animation-duration: 2000ms;
+    -ms-animation-duration: 2000ms;
+    -webkit-animation-duration: 2000ms;
+    -moz-animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+
+
+@keyframes cssload-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes cssload-spin {
+    from {
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes cssload-spin {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cssload-spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+.geleydun {
+    height: 100px;
+    width: 100px;
+    margin: 40px auto;
+    display: none;
+}
+
+    .geleydun.show {
         display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    .grid > .items.slidegrid > li.del:hover {
-        transition: 0.3s;
-    }
-
-    .grid > .items.slidegrid > li.del {
-        transition: 0.3s;
-        width: 30px;
-        height: 30px;
-        background: url("../images/Micon/del.png") no-repeat 0% 100%;
-        background-size: 30px;
-        cursor: pointer;
-        margin-right: 10px;
-        top: -6px;
     }

@@ -15,9 +15,11 @@
 }
 
 #content {
+    transition: 0.3s;
     /*height: 1000px;*/
-    background: #bbb;
-    /*border-top:1px solid transparent;*/
+    background: #777;
+  /*  background-image: url('../images/Micon/grey.png');
+    border-top:1px solid transparent;*/
 }
 
 #footer {

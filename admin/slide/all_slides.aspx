@@ -14,6 +14,73 @@
     <link href="../../style/grid.css" rel="stylesheet" />
     <link href="../../style/header.css" rel="stylesheet" />
     <link href="../../style/accardion.css" rel="stylesheet" />
+    <script src="../../script/jquery.js"></script>
+
+    <script>
+        fo = [];
+
+
+        $(document).ready(function () {
+
+            fill_items(0, 2);
+
+        })
+
+        function fill_items(start, count) {
+            $.ajax({
+                url: "all_slides.aspx/getAll",
+                data: "{st:" + start + ",cu:" + count + "}",
+                dataType: "json",
+                contentType: "application/json",
+                type: "post",
+                success: function (response) {
+                    fo = response.d;
+
+                    $(".grid>.items.slidegrid").remove();
+
+                    $(".geleydun").addClass("show");
+
+                    setTimeout("delayfor()",1000)
+
+
+                },
+                error: function () { }
+
+            });
+        }
+
+        function delayfor() {
+            $(".geleydun").removeClass("show");
+            for (i = 0; i < fo.length; i++) {
+
+                setTimeout("gridsaz(" + i + ")", i * 200);
+            }
+        }
+
+        function gridsaz(i) {
+            ul = $("<ul>").addClass("items slidegrid");
+            im = $("<li>").addClass("pic");
+            img = $("<img>").attr("src", "../../images/uploads/slides/full/" + fo[i].pic);
+            tit = $("<li>").html(fo[i].title);
+            sta = $("<li>").addClass("date").html(fo[i].start);
+            en = $("<li>").addClass("date").html(fo[i].end);
+            pag = $("<li>").html(fo[i].target);
+            ord = $("<li>").html(fo[i].order);
+            sho = $("<li>").html(fo[i].show);
+            edi = $("<li>").addClass("edit");
+            anc = $("<a>").attr("target", "_blank").attr("href", "alter_slide.aspx?id=" + fo[i].id);
+            edi.append(anc);
+
+            del = $("<li>").addClass("del");
+
+            $(".grid").append(ul);
+            ul.append(im).append(tit).append(sta).append(en).append(pag).append(ord).append(sho).append(edi).append(del);
+            im.append(img);
+        }
+
+
+
+    </script>
 
 </head>
 <body>
@@ -44,6 +111,27 @@
                         <li>ویرایش</li>
                     </ul>
 
+                    <div class="geleydun show">
+                        <div class="cssload-container">
+                            <div class="cssload-circle-1">
+                                <div class="cssload-circle-2">
+                                    <div class="cssload-circle-3">
+                                        <div class="cssload-circle-4">
+                                            <div class="cssload-circle-5">
+                                                <div class="cssload-circle-6">
+                                                    <div class="cssload-circle-7">
+                                                        <div class="cssload-circle-8">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
 
@@ -52,7 +140,7 @@
         </div>
 
     </div>
-    
+
     <div id="footer"></div>
 
 

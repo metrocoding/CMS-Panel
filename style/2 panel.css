@@ -1,4 +1,5 @@
 ﻿#content > .holder {
+    transition:0.3s;
     padding:20px 0;
     width: 1360px;
     /*height:900px;*/
@@ -14,8 +15,9 @@
         height: 700px;*/
         /*float: right;*/
         border-radius: 3px;
-        background-color:#333;
-        display:inline-block;
+        background-color: #333;
+        display: inline-block;
+        transition: 0.3s;
     }
 
 
@@ -23,6 +25,7 @@
 
 
     #content > .holder > .center {
+        transition: 0.3s;
         width: 73.5%;
         background: #6200EA;
         /*height: 900px;*/
