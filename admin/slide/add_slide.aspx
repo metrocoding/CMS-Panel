@@ -7,7 +7,8 @@
 
 <html>
 <head>
-
+    <title>افزودن اسلاید</title>
+    <script src="../../script/jquery.js"></script>
     <link href="../../style/fonts.css" rel="stylesheet" />
     <link href="../../style/base.css" rel="stylesheet" />
     <link href="../../style/2 panel.css" rel="stylesheet" />
@@ -110,10 +111,25 @@
 
         </div>
 
-        <div id="footer"></div>
+    
 
 
     </form>
 
 </body>
+    <script>
+    flag = 0;
+
+    $(".headright > .menuswitch").click(function () {
+        if (flag == 0) {
+            $("#content>.holder>.right").addClass("close");
+            $("body").css({ padding:"0 70px 0 0"} );
+            flag = 1;
+        } else if (flag == 1) {
+            $("#content>.holder>.right").removeClass("close");
+            $("body").css({ padding: "0 315px 0 0"} );
+            flag = 0;
+        }
+    })
+</script>
 </html>

@@ -7,12 +7,13 @@
 
 <html>
 <head>
-
+    <title>افزودن خبر</title>
     <link href="../../style/fonts.css" rel="stylesheet" />
     <link href="../../style/base.css" rel="stylesheet" />
     <link href="../../style/2 panel.css" rel="stylesheet" />
     <link href="../../style/form.css" rel="stylesheet" />
     <link href="../../style/header.css" rel="stylesheet" />
+    <script src="../../script/jquery.js"></script>
     <link href="../../style/accardion.css" rel="stylesheet" />
 
 </head>
@@ -27,37 +28,37 @@
             <div class="holder">
 
                 <div class="right">
+
                     <!-- accardion  -->
                     <uc1:admin_accar runat="server" ID="admin_accar" />
                 </div>
-
                 <div class="center">
                     <div class="form">
                         <h2>افزودن خبر</h2>
 
-                        <div id="error" runat="server"> ثبت خبر </div>
+                        <div id="error" runat="server">ثبت خبر </div>
 
                         <div class="items item18">
                             <span class="title">عنوان </span>
-                            <input type="text" id="news_title" runat="server" placeholder="فارسی وارد شود ..." autocomplete="off"/>
+                            <input type="text" id="news_title" runat="server" placeholder="فارسی وارد شود ..." autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
                         <div class="items item19">
                             <span class="title">نویسنده </span>
-                            <input type="text" id="news_author" runat="server" placeholder="نویسنده خبر ..."  autocomplete="off"/>
+                            <input type="text" id="news_author" runat="server" placeholder="نویسنده خبر ..." autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
                         <div class="items item18">
                             <span class="title">لینک منبع</span>
-                            <input type="text" id="news_source" runat="server" placeholder="لینک منبع خبر "  autocomplete="off"/>
+                            <input type="text" id="news_source" runat="server" placeholder="لینک منبع خبر " autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
                         <div class="items item19">
                             <span class="title">اولویت نمایش </span>
-                            <input type="text" id="news_order" runat="server" placeholder="عدد از 1 تا 99 ..."  autocomplete="off"/>
+                            <input type="text" id="news_order" runat="server" placeholder="عدد از 1 تا 99 ..." autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
@@ -103,7 +104,7 @@
                         </div>
 
                         <div class="items item8">
-                            <input type="submit" value="افزودن" runat="server" onserverclick="add_news"/>
+                            <input type="submit" value="افزودن" runat="server" onserverclick="add_news" />
                             <input type="submit" value="پاک کردن" runat="server" onserverclick="reset_form" />
                         </div>
 
@@ -116,10 +117,24 @@
 
         </div>
 
-        <div id="footer"></div>
-
-
     </form>
 
 </body>
+
+<script>
+    flag = 0;
+
+    $(".headright > .menuswitch").click(function () {
+        if (flag == 0) {
+            $("#content>.holder>.right").addClass("close");
+            $("body").css({ padding:"0 70px 0 0"} );
+            flag = 1;
+        } else if (flag == 1) {
+            $("#content>.holder>.right").removeClass("close");
+            $("body").css({ padding: "0 315px 0 0"} );
+            flag = 0;
+        }
+    })
+</script>
+
 </html>

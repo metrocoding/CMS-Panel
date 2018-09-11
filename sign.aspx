@@ -5,7 +5,7 @@
 
 <html>
 <head>
-
+    <title>ثبت نام</title>
     <link href="../../style/fonts.css" rel="stylesheet" />
     <link href="../../style/base.css" rel="stylesheet" />
     <link href="../../style/2 panel.css" rel="stylesheet" />

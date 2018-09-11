@@ -1,29 +1,28 @@
 ﻿body {
+    transition:0.3s;
     margin: 0;
     direction: rtl;
     font-family: sam;
     color: #555;
+    padding: 0 315px 0 0;
+    background-color: #F9FBFD;
 }
 
 #header {
-    border:1px solid #333;
-    height:150px;
-    background:#333;
-    /*box-shadow:0 0 20px 1px #333;*/
-    z-index:20;
+    height: 60px;
+    background: #716aca;
+    padding: 0 15px;
     position:relative;
+    z-index:300;
 }
 
 #content {
     transition: 0.3s;
-    /*height: 1000px;*/
-    background: #777;
-  /*  background-image: url('../images/Micon/grey.png');
-    border-top:1px solid transparent;*/
+    background-color: #F9FBFD;
 }
 
 #footer {
     /*border-top:5px solid #ccc;*/
-    background:#333;
-    height:200px;
+    background: #333;
+    height: 200px;
 }

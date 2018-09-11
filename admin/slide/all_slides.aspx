@@ -7,7 +7,7 @@
 
 <html>
 <head>
-
+    <title> اسلایدها</title>
     <link href="../../style/fonts.css" rel="stylesheet" />
     <link href="../../style/base.css" rel="stylesheet" />
     <link href="../../style/2 panel.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
 
         $(document).ready(function () {
 
-            fill_items(0, 2);
+            fill_items(0, 200);
 
         })
 
@@ -141,10 +141,24 @@
 
     </div>
 
-    <div id="footer"></div>
 
 
 
 
 </body>
+    <script>
+    flag = 0;
+
+    $(".headright > .menuswitch").click(function () {
+        if (flag == 0) {
+            $("#content>.holder>.right").addClass("close");
+            $("body").css({ padding:"0 70px 0 0"} );
+            flag = 1;
+        } else if (flag == 1) {
+            $("#content>.holder>.right").removeClass("close");
+            $("body").css({ padding: "0 315px 0 0"} );
+            flag = 0;
+        }
+    })
+</script>
 </html>

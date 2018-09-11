@@ -30,17 +30,6 @@ public partial class admin_slide_all_slides : System.Web.UI.Page
         public string pic;
         public string des;
 
-        //public slide(string title,int start,int end, int order,string target, bool show, string pic, string des)
-        //{
-        //    this.title = title;
-        //    this.start = start;
-        //    this.end = end;
-        //    this.order = order;
-        //    this.target = target;
-        //    this.show = show;
-        //    this.pic = pic;
-        //    this.des = des;
-        //}
     }
 
     public static List<slide> slides = new List<slide>();
