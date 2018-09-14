@@ -17,6 +17,7 @@
     <link href="../../style/header.css" rel="stylesheet" />
     <link href="../../style/accardion.css" rel="stylesheet" />
     <script src="../../script/jquery.js"></script>
+    <link href="../../style/responsive.css" rel="stylesheet" />
 
     <script>
         fo = [];
@@ -87,7 +88,7 @@
 </head>
 <body>
 
-    <div id="header">
+    <div id="header" class="res">
         <uc1:Header runat="server" ID="Header1" />
     </div>
     <div id="content">
@@ -101,7 +102,7 @@
 
             </div>
 
-            <div class="center">
+            <div class="center res">
                 <div class="grid" id="grid" runat="server">
                     <h2>مشاهده اسلایدها</h2>
 
@@ -151,10 +152,14 @@
     $(".headright > .menuswitch").click(function () {
         if (flag == 0) {
             $("#content>.holder>.right").addClass("close");
+            $("#header").removeClass("res");
+            $("#content>.holder>.center").removeClass("res");
             $("body").css({ padding: "0 70px 0 0" });
             flag = 1;
         } else if (flag == 1) {
             $("#content>.holder>.right").removeClass("close");
+            $("#header").addClass("res");
+            $("#content>.holder>.center").addClass("res");
             $("body").css({ padding: "0 315px 0 0" });
             flag = 0;
         }

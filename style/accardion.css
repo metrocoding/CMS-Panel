@@ -185,7 +185,6 @@
             .right > #accardion > li > .content > a:hover {
                 transition: 0.2s;
                 border-right: 5px solid #4D7CFE;
-                border-bottom: 1px solid #4D7CFE;
                 color: #4D7CFE;
                 background: url("../images/Micon/dot.png") no-repeat 265px center;
                 background-size: 5px;

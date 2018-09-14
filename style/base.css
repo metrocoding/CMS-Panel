@@ -9,11 +9,12 @@
 }
 
 #header {
+    transition: 0.3s;
     height: 60px;
     background: #716aca;
     padding: 0 15px;
-    position:relative;
-    z-index:300;
+    position: relative;
+    z-index: 300;
 }
 
 #content {
@@ -21,8 +22,3 @@
     background-color: #F9FBFD;
 }
 
-#footer {
-    /*border-top:5px solid #ccc;*/
-    background: #333;
-    height: 200px;
-}

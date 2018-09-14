@@ -25,6 +25,7 @@
     }
 
     .form > .items {
+        transition:0.3s;
         width: 85%;
         margin: 10px 60px 40px auto;
         /*background: #333;*/

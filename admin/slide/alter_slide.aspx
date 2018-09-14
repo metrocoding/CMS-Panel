@@ -18,13 +18,13 @@
     <link href="../../style/header.css" rel="stylesheet" />
     <link href="../../style/accardion.css" rel="stylesheet" />
     <script src="../../script/jquery.js"></script>
-
+    <link href="../../style/responsive.css" rel="stylesheet" />
 </head>
 <body>
 
     <form runat="server">
 
-        <div id="header">
+        <div id="header" class="res">
             <uc1:Header runat="server" ID="Header1" />
         </div>
 
@@ -39,11 +39,11 @@
 
                 </div>
 
-                <div class="center">
+                <div class="center res">
                     <div class="form">
                         <h2>ویرایش اسلاید</h2>
 
-                        <div class="items">
+                        <div class="items item41">
                             <img id="slide_img" runat="server" src="../../images/uploads/news/full/81680_Screenshot (2).png" />
                         </div>
 
@@ -91,7 +91,7 @@
                             <label for="sli_pic">انتخاب </label>
                         </div>
 
-                        <div class="items no_color">
+                        <div class="items no_color no3">
                             <div class="switchmain">
                                 <label class="switch">
                                     <input type="checkbox" id="show" runat="server" checked/>
@@ -129,16 +129,20 @@
 
 </body>
     <script>
-    flag = 0;
+     flag = 0;
 
     $(".headright > .menuswitch").click(function () {
         if (flag == 0) {
             $("#content>.holder>.right").addClass("close");
-            $("body").css({ padding:"0 70px 0 0"} );
+            $("#header").removeClass("res");
+            $("#content>.holder>.center").removeClass("res");
+            $("body").css({ padding: "0 70px 0 0" });
             flag = 1;
         } else if (flag == 1) {
             $("#content>.holder>.right").removeClass("close");
-            $("body").css({ padding: "0 315px 0 0"} );
+            $("#header").addClass("res");
+            $("#content>.holder>.center").addClass("res");
+            $("body").css({ padding: "0 315px 0 0" });
             flag = 0;
         }
     })

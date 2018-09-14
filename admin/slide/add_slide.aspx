@@ -17,13 +17,13 @@
     <link href="../../style/form.css" rel="stylesheet" />
     <link href="../../style/header.css" rel="stylesheet" />
     <link href="../../style/accardion.css" rel="stylesheet" />
-
+    <link href="../../style/responsive.css" rel="stylesheet" />
 </head>
 <body>
 
     <form runat="server">
 
-        <div id="header">
+        <div id="header" class="res">
             <uc1:Header runat="server" ID="Header1" />
         </div>
 
@@ -37,7 +37,7 @@
                     <uc1:admin_accar runat="server" ID="admin_accar" />
 
                 </div>
-                <div class="center">
+                <div class="center res">
                     <div class="form">
                         <h2>افزودن اسلاید</h2>
 
@@ -81,10 +81,10 @@
                             <span class="title">عکس اسلاید </span>
 
                             <input type="file" id="sli_pic" runat="server" />
-                            <label for="sli_pic">آپلود </label>
+                            <label for="sli_pic">انتخاب </label>
                         </div>
 
-                        <div class="items no_color">
+                        <div class="items no_color no2">
                             <div class="switchmain">
                                 <label class="switch">
                                     <input type="checkbox" id="show" runat="server" checked/>
@@ -97,7 +97,7 @@
 
 
 
-                        <div class="items item7">
+                        <div class="items item7 it1">
                             <span class="title tt2">توضیحات </span>
                             <textarea id="sli_des" runat="server">  </textarea>
                         </div>
@@ -128,11 +128,15 @@
     $(".headright > .menuswitch").click(function () {
         if (flag == 0) {
             $("#content>.holder>.right").addClass("close");
-            $("body").css({ padding:"0 70px 0 0"} );
+            $("#header").removeClass("res");
+            $("#content>.holder>.center").removeClass("res");
+            $("body").css({ padding: "0 70px 0 0" });
             flag = 1;
         } else if (flag == 1) {
             $("#content>.holder>.right").removeClass("close");
-            $("body").css({ padding: "0 315px 0 0"} );
+            $("#header").addClass("res");
+            $("#content>.holder>.center").addClass("res");
+            $("body").css({ padding: "0 315px 0 0" });
             flag = 0;
         }
     })
