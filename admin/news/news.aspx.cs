@@ -96,7 +96,6 @@ public partial class admin_news_news : System.Web.UI.Page
         news_source.Value = "";
         news_order.Value = "";
         news_category.SelectedIndex = 0;
-        hide.Checked = false;
         show.Checked = true;
         news_short.Value = "";
         news_detail.Value = "";

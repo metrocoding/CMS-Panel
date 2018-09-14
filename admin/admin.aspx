@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="admin.aspx.cs" Inherits="admin_admin" %>
 
 <%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+<%@ Register Src="~/controls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+
 
 
 
@@ -21,7 +23,7 @@
 <body>
 
     <div id="header">
-
+        <uc1:Header runat="server" ID="Header1" />
     </div>
 
     <div id="content">

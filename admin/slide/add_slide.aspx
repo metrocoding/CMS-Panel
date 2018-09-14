@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="add_slide.aspx.cs" Inherits="admin_slide_add_slide" %>
 
 <%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+<%@ Register Src="~/controls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+
 
 
 <!DOCTYPE html>
@@ -21,7 +23,9 @@
 
     <form runat="server">
 
-        <div id="header"></div>
+        <div id="header">
+            <uc1:Header runat="server" ID="Header1" />
+        </div>
 
         <div id="content">
 
@@ -37,7 +41,7 @@
                     <div class="form">
                         <h2>افزودن اسلاید</h2>
 
-                        <div id="error" runat="server"> ثبت اسلایدر </div>
+                        <div id="error" runat="server">   </div>
 
                         <div class="items item1">
                             <span class="title">عنوان </span>
@@ -81,13 +85,14 @@
                         </div>
 
                         <div class="items no_color">
-                            <span class="title tt">وضعیت نمایش </span>
-
-                            <input type="radio" id="show" runat="server" name="r" checked />
-                            <label for="show">نمایش </label>
-
-                            <input type="radio" id="hide" runat="server" name="r" />
-                            <label for="hide">عدم نمایش   </label>
+                            <div class="switchmain">
+                                <label class="switch">
+                                    <input type="checkbox" id="show" runat="server" checked/>
+                                    <span class="slider"></span>
+                                </label>
+                                وضعیت نمایش
+   
+                            </div>
                         </div>
 
 
@@ -98,8 +103,8 @@
                         </div>
 
                         <div class="items item8">
-                            <input type="submit" value="افزودن" runat="server" onserverclick="add_click"/>
-                            <input type="submit" value="پاک کردن" runat="server" onserverclick="reset_click" />
+                            <input class="greenbut" type="submit" value="افزودن" runat="server" onserverclick="add_click"/>
+                            <input class="redbut" type="submit" value="پاک کردن" runat="server" onserverclick="reset_click" />
                         </div>
 
 

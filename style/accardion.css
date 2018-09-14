@@ -20,7 +20,8 @@
     margin-bottom: 10px;
     background: #fff;
     height: 180px;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow:hidden;
 }
 
     #content > .holder > .right > .proinfo > img {
@@ -31,7 +32,7 @@
     }
 
     #content > .holder > .right > .proinfo > h2 {
-        transition:0.3s;
+        transition: 0.3s;
         height: 28px;
         width: 180px;
         margin: 5px;
@@ -40,8 +41,7 @@
         top: -55px;
         font-size: 19px;
         font-weight: normal;
-        overflow:hidden;
-
+        overflow: hidden;
     }
 
         #content > .holder > .right > .proinfo > span:hover,
@@ -55,7 +55,7 @@
         color: #35cd3a;
         font-size: 15px;
         position: relative;
-        top: -55px;
+        top: -80px;
         right: 130px;
         display: inline-block;
         overflow: hidden;
@@ -64,8 +64,8 @@
     #content > .holder > .right > .proinfo > div:hover {
         cursor: pointer;
         transition: 0.3s;
-        color: #4D7CFE;
-        background-color: #BFE9F8;
+        color: #fff;
+        background-color: #4D7CFE;
     }
 
 
@@ -79,15 +79,18 @@
         position: relative;
         top: -8px;
         padding: 3px 5px;
+        overflow: hidden;
     }
 
-
-
-
-
-
-
-
+        #content > .holder > .right > .proinfo > div > .material-icons {
+            transition: 0.3s;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+        }
 
 
 /*Accardion==================================================*/
@@ -122,44 +125,23 @@
                 text-indent: 20px;
                 background-color: #F7F7F7;
                 background-repeat: no-repeat;
+                background-image: url("../images/Micon/up.png");
+                background-position: 20px center;
+                background-size: 11px;
+                border-bottom: 1px solid #4D7CFE;
             }
 
-        .right > #accardion > li:nth-child(1) > input:checked + label {
-            background-image: url("../images/Micon/slidesb.png"),url("../images/Micon/up.png");
-            background-position: 97% 50%,20px center;
-            background-size: 29px,11px;
-        }
+                .right > #accardion > li > input:checked + label > .material-icons {
+                    transition: 0.3s;
+                    color: #4D7CFE;
+                }
 
-        .right > #accardion > li:nth-child(2) > input:checked + label {
-            background-image: url("../images/Micon/newsb.png"),url("../images/Micon/up.png");
-            background-position: 97% 50%,20px center;
-            background-size: 29px,11px;
-        }
-
-        .right > #accardion > li:nth-child(3) > input:checked + label {
-            background-image: url("../images/Micon/productb.png"),url("../images/Micon/up.png");
-            background-position: 97% 50%,20px center;
-            background-size: 29px,11px;
-        }
-
-        .right > #accardion > li:nth-child(4) > input:checked + label {
-            background-image: url("../images/Micon/adsb.png"),url("../images/Micon/up.png");
-            background-position: 97% 50%,20px center;
-            background-size: 29px,11px;
-        }
-
-        .right > #accardion > li:nth-child(5) > input:checked + label {
-            background-image: url("../images/Micon/userb.png"),url("../images/Micon/up.png");
-            background-position: 97% 50%,20px center;
-            background-size: 29px,11px;
-        }
-
-        .right > #accardion > li > input:checked ~ .content {
-            transition: 0.3s;
-            height: 110px;
-            margin-top: 0;
-            padding-top: 15px;
-        }
+            .right > #accardion > li > input:checked ~ .content {
+                transition: 0.3s;
+                height: 112px;
+                margin-top: 0;
+                padding-top: 15px;
+            }
 
         .right > #accardion > li > label:hover {
             transition: 0.3s;
@@ -167,37 +149,10 @@
             background-color: #F7F7F7;
         }
 
-        .right > #accardion > li:nth-child(1) > label {
-            background-image: url("../images/Micon/slides.png"),url("../images/Micon/down.png");
-            background-position: 97% 50%,20px center;
-            background-size: 25px,11px;
-        }
-
-        .right > #accardion > li:nth-child(2) > label {
-            background-image: url("../images/Micon/news.png"),url("../images/Micon/down.png");
-            background-position: 97% 50%,20px center;
-            background-size: 25px,11px;
-        }
-
-        .right > #accardion > li:nth-child(3) > label {
-            background-image: url("../images/Micon/product.png"),url("../images/Micon/down.png");
-            background-position: 97% 50%,20px center;
-            background-size: 29px,11px;
-        }
-
-        .right > #accardion > li:nth-child(4) > label {
-            background-image: url("../images/Micon/ad.png"),url("../images/Micon/down.png");
-            background-position: 97% 50%,20px center;
-            background-size: 25px,11px;
-        }
-
-        .right > #accardion > li:nth-child(5) > label {
-            background-image: url("../images/Micon/user.png"),url("../images/Micon/down.png");
-            background-position: 97% 50%,20px center;
-            background-size: 25px,11px;
-        }
-
         .right > #accardion > li > label {
+            background-image: url("../images/Micon/down.png");
+            background-position: 20px center;
+            background-size: 11px;
             background-repeat: no-repeat;
             transition: 0.3s;
             cursor: pointer;
@@ -207,7 +162,16 @@
             padding: 6px 25px;
             line-height: 29px;
             text-indent: 20px;
+            position: relative;
+            border-bottom: 1px solid transparent;
         }
+
+            .right > #accardion > li > label > .material-icons {
+                transition: 0.3s;
+                position: absolute;
+                top: 10px;
+                right: 12px;
+            }
 
         .right > #accardion > li > .content {
             transition: 0.3s;
@@ -220,9 +184,9 @@
 
             .right > #accardion > li > .content > a:hover {
                 transition: 0.2s;
-                background-color: rgba(230,230,230,1);
                 border-right: 5px solid #4D7CFE;
-                color: #716aca;
+                border-bottom: 1px solid #4D7CFE;
+                color: #4D7CFE;
                 background: url("../images/Micon/dot.png") no-repeat 265px center;
                 background-size: 5px;
             }
@@ -278,111 +242,88 @@
         transition: 0.3s;
         width: 0;
         height: 0;
-        margin:0;
+        margin: 0;
     }
 
     #content > .holder > .right.close > .proinfo > div {
+        transition:0;
         margin: 4px 0px;
-        font-size: 15px;
         right: -1px;
         top: -19px;
-        border-radius: 0;
-        text-align: center;
+        color: transparent;
     }
+
+#content > .holder > .right.close > .proinfo > div:hover>i{
+    transition:0.3s;
+    color:#fff;
+}
+
+#content > .holder > .right.close > .proinfo > div > .material-icons {
+    transition: 0.3s;
+    top: 4px;
+    right: 21px;
+    height: 24px;
+    width: 24px;
+    color: #9a9a9a;
+}
 
 
 /*part two*/
 
-.right.close > #accardion > li > input:checked + label {
-    color: transparent;
-}
-
-.right.close > #accardion > li:nth-child(1) > input:checked + label {
-    background-image: url("../images/Micon/slidesb.png");
-    background-position: 51% 50%;
-    background-size: 25px;
-}
-
-.right.close > #accardion > li:nth-child(2) > input:checked + label {
-    background-image: url("../images/Micon/newsb.png");
-    background-position: 51% 50%;
-    background-size: 25px;
-}
-
-.right.close > #accardion > li:nth-child(3) > input:checked + label {
-    background-image: url("../images/Micon/productb.png");
-    background-position: 51% 50%;
-    background-size: 29px;
-}
-
-.right.close > #accardion > li:nth-child(4) > input:checked + label {
-    background-image: url("../images/Micon/adsb.png");
-    background-position: 51% 50%;
-    background-size: 25px;
-}
-
-.right.close > #accardion > li:nth-child(5) > input:checked + label {
-    background-image: url("../images/Micon/userb.png");
-    background-position: 51% 50%;
-    background-size: 25px;
-}
-
-.right.close > #accardion > li > input:checked ~ .content {
+.right.close > #accardion > li {
     transition: 0.3s;
-    height: 0;
-    margin-top: 0;
-    padding-top: 0;
+    margin-bottom: 10px;
 }
 
-.right.close > #accardion > li:nth-child(1) > label {
-    background-image: url("../images/Micon/slides.png");
-    background-position: 51% 50%;
-    background-size: 25px;
-}
+    .right.close > #accardion > li > input:checked + label {
+        color: transparent;
+        background: #F7F7F7;
+    }
 
-.right.close > #accardion > li:nth-child(2) > label {
-    background-image: url("../images/Micon/news.png");
-    background-position: 51% 50%;
-    background-size: 25px;
-}
+    .right.close > #accardion > li > label > .material-icons {
+        color: #9a9a9a;
+    }
 
-.right.close > #accardion > li:nth-child(3) > label {
-    background-image: url("../images/Micon/product.png");
-    background-position: 51% 50%;
-    background-size: 29px;
-}
+    .right.close > #accardion > li > input:checked ~ .content {
+        transition: 0.3s;
+        height: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
 
-.right.close > #accardion > li:nth-child(4) > label {
-    background-image: url("../images/Micon/ad.png");
-    background-position: 51% 50%;
-    background-size: 25px;
-}
-
-.right.close > #accardion > li:nth-child(5) > label {
-    background-image: url("../images/Micon/user.png");
-    background-position: 51% 50%;
-    background-size: 25px;
-}
-
-.right.close > #accardion > li > label {
-    color: transparent;
-}
+    .right.close > #accardion > li > label {
+        color: transparent;
+        background: transparent;
+    }
 
 #content > .holder > .right.close > .proinfo {
     transition: 0.3s;
-    height: 230px;
+    height: 250px;
 }
 
-#content > .holder > .right.close > .proinfo > div {
+    #content > .holder > .right.close > .proinfo > div {
+        transition: 0.3s;
+        display: block;
+        margin: 10px 0;
+        font-size: 15px;
+        right: 0px;
+        position: relative;
+        top: -17px;
+        padding: 4px 10px;
+        border-radius: 0;
+        text-align: center;
+    }
+
+.right.close > #accardion > li > label:hover {
     transition: 0.3s;
-    display: block;
-    margin: 10px 0;
-    font-size: 15px;
-    right: 0px;
-    position: relative;
-    top: -17px;
-    padding: 4px 10px;
-    border-radius: 0;
-    text-align: center;
+    cursor: pointer;
+    background-color: #F7F7F7;
 }
 
+.right.close > #accardion > li > label > .material-icons {
+    transition: 0.3s;
+    position: absolute;
+    top: 6px;
+    right: 18px;
+    font-size: 30px;
+}

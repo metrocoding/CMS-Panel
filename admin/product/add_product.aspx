@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="add_product.aspx.cs" Inherits="admin_product_add_product" %>
 
 <%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+<%@ Register Src="~/controls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+
 
 
 <!DOCTYPE html>
@@ -20,7 +22,9 @@
 
     <form runat="server">
 
-        <div id="header"></div>
+        <div id="header">
+            <uc1:Header runat="server" ID="Header1" />
+        </div>
 
         <div id="content">
 
@@ -34,7 +38,7 @@
                     <div class="form">
                         <h2>افزودن آلبوم</h2>
 
-                        <div id="error" runat="server"> ثبت آلبوم </div>
+                        <div id="error" runat="server">   </div>
 
                         <div class="items item9">
                             <span class="title">نام آلبوم</span>
@@ -71,18 +75,19 @@
                         <div class="items item13">
                             <span class="title">کاور آلبوم </span>
                             <input type="file" id="album_art" runat="server" />
-                            <label for="album_art">آپلود </label>
+                            <label for="album_art">انتخاب </label>
                         </div>
 
 
                         <div class="items no_color">
-                            <span class="title tt">وضعیت نمایش </span>
-
-                            <input type="radio" id="show" runat="server" name="r" checked />
-                            <label for="show">نمایش</label>
-
-                            <input type="radio" id="hide" runat="server" name="r" />
-                            <label for="hide">عدم نمایش</label>
+                            <div class="switchmain">
+                                <label class="switch">
+                                    <input type="checkbox" id="show" runat="server" checked/>
+                                    <span class="slider"></span>
+                                </label>
+                                وضعیت نمایش
+   
+                            </div>
                         </div>
 
 
@@ -92,8 +97,8 @@
                         </div>
 
                         <div class="items item8">
-                            <input type="submit" value="افزودن" runat="server" onserverclick="adding"/>
-                            <input type="submit" value="پاک کردن" runat="server"  onserverclick="resetform"/>
+                            <input class="greenbut" type="submit" value="افزودن" runat="server" onserverclick="adding"/>
+                            <input class="redbut" type="submit" value="پاک کردن" runat="server"  onserverclick="resetform"/>
                         </div>
 
 

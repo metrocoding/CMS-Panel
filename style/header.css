@@ -1,39 +1,217 @@
-﻿#header:hover > a.home,
-#header:hover > img {
-    cursor:pointer;
+﻿#header > div {
+    display: inline-block;
+    position: relative;
 }
 
-#header > a.home {
-    transition: 0.3s;
-    position: absolute;
-    top: 55px;
-    left: 20px;
-}
 
-    #header > a.home > img {
-        width: 35px;
+
+
+    #header > div > #search_box {
+        transition: 0.3s;
+        height: 30px;
+        width: 300px;
+        border-radius: 5px;
+        margin: 13px 15px 0 0;
+        border: 1px solid transparent;
+        text-indent: 10px;
+        font-family: sam;
+        font-size: 16px;
+        background-color: #6761B5;
+        color: #ffffff;
     }
 
-#header > img {
-    transition: 0.3s;
-    width: 90px;
-    border: 1px solid transparent;
-    margin: 30px;
+        #header > div > #search_box:focus {
+            background-color: #ffffff;
+            color: #808080;
+        }
+
+
+    #header > div > .material-icons.searchicon {
+        transition: 0.3s;
+        position: absolute;
+        color: #A1AEDD;
+        bottom: 5px;
+        left: 5px;
+    }
+
+#header > .leftmenu {
+    width: 250px;
+    height: 100%;
+    float: left;
+    margin: 0 0 0 15px;
+    padding: 0;
+    list-style: none;
 }
 
-#header > h2 {
+    #header > .leftmenu > li:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        background-color: #6761B5;
+    }
+
+    #header > .leftmenu > li {
+        transition: 0.3s;
+        width: 19px;
+        height: 19px;
+        padding: 10px;
+        display: inline-block;
+        margin: 10px 16px 0 0;
+        border-radius: 3px;
+        position: relative;
+        top: -3px;
+    }
+
+        #header > .leftmenu > li.pic {
+            width: 45px;
+            height: 45px;
+            padding: 0;
+            border-radius: 100%;
+            margin-top: 2px;
+            position: relative;
+            top: 5px;
+        }
+
+.leftmenu > li > .notif {
     position: absolute;
-    top: 20px;
-    right: 150px;
-    font-weight: 500;
-    color: #fff;
+    top: 8px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    background: #f3545d;
+    border-radius: 100%;
 }
 
-#header > .wel {
-    top: 75px;
-    font-size: 18px;
+.leftmenu > li > .message {
+    transition: 0.3s;
+    height: 0;
+    cursor: default;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 280px;
+    background: #fff;
+    box-shadow: 0 1px 11px rgba(0,0,0,.15);
+    overflow: hidden;
+    opacity: 0;
+    z-index:-10;
+    visibility:hidden;
 }
 
-    #header > .wel > span {
-        color: #00BA00;
+.leftmenu > li:hover > .message {
+    transition: 0.3s;
+    opacity: 1;
+    height: 311px;
+    z-index:10;
+    visibility:visible;
+}
+
+.leftmenu > li > .message > div {
+    padding: 12px 15px;
+    height: 21px;
+    border-bottom: 1px solid #f1f1f1;
+    font-family: sam;
+    color: #444;
+    line-height: 17px;
+    font-size: 17px;
+}
+
+    .leftmenu > li > .message > div.big:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        background: #f2f2f2;
+    }
+
+    .leftmenu > li > .message > div.big {
+        transition: 0.3s;
+        height: 72px;
+        padding: 0 15px;
+    }
+
+        .leftmenu > li > .message > div.big > img {
+            width: 45px;
+            margin-top: 7px;
+            border-radius: 100%;
+        }
+
+.leftmenu > li:nth-child(2) > .message > div.big > span.time {
+    top: -5px;
+}
+
+.leftmenu > li:nth-child(2) > .message > div.big > h1 {
+    width: 180px;
+    top: -20px;
+}
+
+.leftmenu > li > .message > div.big > h1 {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 15px;
+    position: relative;
+    top: -32px;
+    font-weight: normal;
+}
+
+.leftmenu > li > .message > div.big > span {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 13px;
+    position: relative;
+    top: -27px;
+    background: transparent;
+    color: #999;
+    right: 50px;
+    width: 180px;
+}
+
+    .leftmenu > li > .message > div.big > span.time {
+        font-size: 11px;
+        top: -22px;
+        color: #555;
+        right: 0;
+        width: 70px;
+        float: left;
+        text-align: left;
+    }
+
+.leftmenu > li > .message > div.small > span {
+    float: left;
+    display: inline-block;
+    color: #eee;
+    font-size: 17px;
+    padding: 4px 5px 1px 5px;
+    background: #f3545d;
+    border-radius: 3px;
+    line-height: 19px;
+    position: relative;
+    top: -2px;
+}
+
+.leftmenu > li > .message > div.allmes:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: #4D7CFE;
+}
+
+.leftmenu > li > .message > div.allmes {
+    transition: 0.3s;
+    font-size: 14px;
+    background: url("../images/Micon/left.png") no-repeat 20px center;
+    background-size: 12px;
+}
+
+
+.leftmenu > li > .message.pic {
+    width: 160px;
+    height: 137px;
+}
+
+    .leftmenu > li > .message.pic > div:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        background: #f2f2f2;
+        color:#4D7CFE;
+    }
+
+    .leftmenu > li > .message.pic > div {
+        font-size: 15px;
     }

@@ -1,6 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="news.aspx.cs" Inherits="admin_news_news" %>
 
 <%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+<%@ Register Src="~/controls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+
+
 
 
 <!DOCTYPE html>
@@ -21,13 +24,17 @@
 
     <form runat="server">
 
-        <div id="header"></div>
+        <div id="header">
+            <uc1:Header runat="server" ID="Header1" />
+
+        </div>
 
         <div id="content">
 
             <div class="holder">
 
                 <div class="right">
+
 
                     <!-- accardion  -->
                     <uc1:admin_accar runat="server" ID="admin_accar" />
@@ -36,7 +43,7 @@
                     <div class="form">
                         <h2>افزودن خبر</h2>
 
-                        <div id="error" runat="server">ثبت خبر </div>
+                        <div id="error" runat="server"></div>
 
                         <div class="items item18">
                             <span class="title">عنوان </span>
@@ -78,17 +85,18 @@
                             <span class="title">عکس خبر </span>
 
                             <input type="file" id="news_pic" runat="server" />
-                            <label for="news_pic">آپلود </label>
+                            <label for="news_pic">انتخاب </label>
                         </div>
 
                         <div class="items no_color">
-                            <span class="title tt">وضعیت نمایش </span>
-
-                            <input type="radio" id="show" runat="server" name="r" checked />
-                            <label for="show">نمایش </label>
-
-                            <input type="radio" id="hide" runat="server" name="r" />
-                            <label for="hide">عدم نمایش</label>
+                            <div class="switchmain">
+                                <label class="switch">
+                                    <input type="checkbox" id="show" runat="server" checked/>
+                                    <span class="slider"></span>
+                                </label>
+                                وضعیت نمایش
+   
+                            </div>
                         </div>
 
 
@@ -104,8 +112,8 @@
                         </div>
 
                         <div class="items item8">
-                            <input type="submit" value="افزودن" runat="server" onserverclick="add_news" />
-                            <input type="submit" value="پاک کردن" runat="server" onserverclick="reset_form" />
+                            <input class="greenbut" type="submit" value="افزودن" runat="server" onserverclick="add_news" />
+                            <input class="redbut" type="submit" value="پاک کردن" runat="server" onserverclick="reset_form" />
                         </div>
 
 
@@ -127,14 +135,15 @@
     $(".headright > .menuswitch").click(function () {
         if (flag == 0) {
             $("#content>.holder>.right").addClass("close");
-            $("body").css({ padding:"0 70px 0 0"} );
+            $("body").css({ padding: "0 70px 0 0" });
             flag = 1;
         } else if (flag == 1) {
             $("#content>.holder>.right").removeClass("close");
-            $("body").css({ padding: "0 315px 0 0"} );
+            $("body").css({ padding: "0 315px 0 0" });
             flag = 0;
         }
     })
+
 </script>
 
 </html>

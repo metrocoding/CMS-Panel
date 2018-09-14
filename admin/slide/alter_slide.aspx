@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="alter_slide.aspx.cs" Inherits="admin_slide_alter_slide" %>
 
 <%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+<%@ Register Src="~/controls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+
 
 
 
@@ -22,7 +24,9 @@
 
     <form runat="server">
 
-        <div id="header"></div>
+        <div id="header">
+            <uc1:Header runat="server" ID="Header1" />
+        </div>
 
         <div id="content">
 
@@ -43,7 +47,7 @@
                             <img id="slide_img" runat="server" src="../../images/uploads/news/full/81680_Screenshot (2).png" />
                         </div>
 
-                        <div id="error" runat="server"> ویرایش اسلاید </div>
+                        <div id="error" runat="server">   </div>
 
 
                         <div class="items item1">
@@ -84,17 +88,18 @@
                             <span class="title">عکس اسلاید </span>
 
                             <input type="file" id="sli_pic" runat="server" />
-                            <label for="sli_pic">آپلود </label>
+                            <label for="sli_pic">انتخاب </label>
                         </div>
 
                         <div class="items no_color">
-                            <span class="title tt">وضعیت نمایش </span>
-
-                            <input type="radio" id="show" runat="server" name="r" checked />
-                            <label for="show">نمایش </label>
-
-                            <input type="radio" id="hide" runat="server" name="r" />
-                            <label for="hide">عدم نمایش   </label>
+                            <div class="switchmain">
+                                <label class="switch">
+                                    <input type="checkbox" id="show" runat="server" checked/>
+                                    <span class="slider"></span>
+                                </label>
+                                وضعیت نمایش
+   
+                            </div>
                         </div>
 
 
@@ -105,8 +110,8 @@
                         </div>
 
                         <div class="items item8">
-                            <input type="submit" value="بروزرسانی" runat="server"/>
-                            <input type="submit" value=" حذف" runat="server"/>
+                            <input class="greenbut" type="submit" value="بروزرسانی" runat="server"/>
+                            <input class="redbut" type="submit" value=" حذف" runat="server"/>
                         </div>
 
 

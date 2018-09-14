@@ -97,7 +97,6 @@ public partial class admin_product_add_product : System.Web.UI.Page
         album_artist.Value = "";
         album_genre.SelectedIndex = 0;
         album_price.Value = "";
-        hide.Checked = false;
         show.Checked = true;
         album_des.Value = "";
     }

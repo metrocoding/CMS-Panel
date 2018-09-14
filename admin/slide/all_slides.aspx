@@ -1,13 +1,15 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="all_slides.aspx.cs" Inherits="admin_slide_all_slides" %>
 
 <%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+<%@ Register Src="~/controls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+
 
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <title> اسلایدها</title>
+    <title>اسلایدها</title>
     <link href="../../style/fonts.css" rel="stylesheet" />
     <link href="../../style/base.css" rel="stylesheet" />
     <link href="../../style/2 panel.css" rel="stylesheet" />
@@ -40,7 +42,7 @@
 
                     $(".geleydun").addClass("show");
 
-                    setTimeout("delayfor()",1000)
+                    setTimeout("delayfor()", 2000)
 
 
                 },
@@ -85,7 +87,9 @@
 </head>
 <body>
 
-    <div id="header"></div>
+    <div id="header">
+        <uc1:Header runat="server" ID="Header1" />
+    </div>
     <div id="content">
 
         <div class="holder">
@@ -99,7 +103,7 @@
 
             <div class="center">
                 <div class="grid" id="grid" runat="server">
-                    <h2>مشاهده اسلاید</h2>
+                    <h2>مشاهده اسلایدها</h2>
 
                     <ul class="items header">
                         <li>عنوان</li>
@@ -112,24 +116,19 @@
                     </ul>
 
                     <div class="geleydun show">
-                        <div class="cssload-container">
-                            <div class="cssload-circle-1">
-                                <div class="cssload-circle-2">
-                                    <div class="cssload-circle-3">
-                                        <div class="cssload-circle-4">
-                                            <div class="cssload-circle-5">
-                                                <div class="cssload-circle-6">
-                                                    <div class="cssload-circle-7">
-                                                        <div class="cssload-circle-8">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+                        <div class="sk-cube-grid">
+                            <div class="sk-cube sk-cube1"></div>
+                            <div class="sk-cube sk-cube2"></div>
+                            <div class="sk-cube sk-cube3"></div>
+                            <div class="sk-cube sk-cube4"></div>
+                            <div class="sk-cube sk-cube5"></div>
+                            <div class="sk-cube sk-cube6"></div>
+                            <div class="sk-cube sk-cube7"></div>
+                            <div class="sk-cube sk-cube8"></div>
+                            <div class="sk-cube sk-cube9"></div>
                         </div>
+
                     </div>
 
 
@@ -146,17 +145,17 @@
 
 
 </body>
-    <script>
+<script>
     flag = 0;
 
     $(".headright > .menuswitch").click(function () {
         if (flag == 0) {
             $("#content>.holder>.right").addClass("close");
-            $("body").css({ padding:"0 70px 0 0"} );
+            $("body").css({ padding: "0 70px 0 0" });
             flag = 1;
         } else if (flag == 1) {
             $("#content>.holder>.right").removeClass("close");
-            $("body").css({ padding: "0 315px 0 0"} );
+            $("body").css({ padding: "0 315px 0 0" });
             flag = 0;
         }
     })

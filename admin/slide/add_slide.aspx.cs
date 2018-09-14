@@ -98,6 +98,7 @@ public partial class admin_slide_add_slide : System.Web.UI.Page
         sli_start.Value = "";
         sli_end.Value = "";
         sli_order.Value = "";
+        show.Checked = true;
         sli_des.Value = "";
         sli_page.SelectedIndex = 0;
     }

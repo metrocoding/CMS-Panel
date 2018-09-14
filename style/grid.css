@@ -1,21 +1,19 @@
 ﻿.grid {
-    background: #333;
     border-radius: 2px;
     padding-bottom: 40px;
 }
 
     .grid > h2 {
-        background: #6200EA;
         font-family: sam;
         font-weight: normal;
-        color: #fff;
-        text-align: center;
-        width: 40%;
-        margin: 0 auto;
+        color: #575962;
+        text-align: right;
+        margin: 10px 0 0 0;
         padding: 7px 0;
-        border-radius: 0 0 3px 3px;
         line-height: 40px;
         height: 50px;
+        text-indent: 65px;
+        border-bottom: 2px solid #f1f1f1;
     }
 
     .grid > .items {
@@ -23,8 +21,6 @@
         margin: 0 30px;
         padding: 3px;
         list-style: none;
-        /*border-bottom: 1px solid #ccc;
-        background: #fff;*/
         font-family: sam;
         font-size: 19px;
         height: 44px;
@@ -40,32 +36,33 @@
 
     .grid > .items.slidegrid:hover {
         transition: 0.3s;
-        border-radius: 30px;
+        border-color: #3e93ff;
     }
 
     .grid > .items.slidegrid {
         margin-bottom: 5px;
         transition: 0.3s;
         font-size: 14px;
-        background-color: rgba(240,240,240,1);
+        background-color: #Fff;
         border-radius: 3px;
-        color: #000;
+        border: 1px solid #ebedf2;
+        color: #777;
         animation: slide 0.8s;
     }
 
         .grid > .items.slidegrid:nth-child(2n+1) {
-            background-color: #d5b8ff;
+            background-color: #f2f2f2;
         }
 
 @keyframes slide {
     0% {
         opacity: 0;
-        transform: translateX(-30px);
+        transform: scale(0.5) rotateY(-90deg);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: scale(1) rotateY(0);
     }
 }
 
@@ -106,12 +103,10 @@
     transition: 0.3s;
     display: inline-block;
     width: 80px;
-    /*height: 30px;*/
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     border-radius: 3px 3px 0 0;
-    background: #00BA00;
-    color: #fff;
+    color: #495057;
 }
 
     .grid > .items.header > li:nth-child(1) {
@@ -160,28 +155,24 @@
         top: -12px;
     }
 
-.grid > .items:hover > li.pic > img {
-    transition: 0.3s;
-    border-radius: 100%;
-}
 
-.grid > .items > li.pic > img:hover {
-    transition: 0.3s;
-    transform: scale(5);
-    position: relative;
-    z-index: 5;
-}
+    .grid > .items > li.pic > img:hover {
+        transition: 0.3s;
+        transform: scale(3);
+        position: relative;
+        z-index: 5;
+    }
 
-.grid > .items > li.pic > img {
-    transition: 0.3s;
-    width: 100%;
-    height: 100%;
-    border-radius: 3px;
-}
+    .grid > .items > li.pic > img {
+        transition: 0.3s;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+    }
 
-.grid > .items > li.date {
-    width: 110px;
-}
+    .grid > .items > li.date {
+        width: 110px;
+    }
 
 .grid > .items.slidegrid > li.edit:hover {
     transition: 0.3s;
@@ -222,149 +213,87 @@
 
 /*  loader*/
 
-.cssload-container {
-    width: 87px;
-    margin: 0 auto;
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
 }
 
-.cssload-circle-1 {
-    height: 87px;
-    width: 87px;
-    background: rgb(97,46,141);
-}
-
-.cssload-circle-2 {
-    height: 72px;
-    width: 72px;
-    background: rgb(194,34,134);
-}
-
-.cssload-circle-3 {
-    height: 58px;
-    width: 58px;
-    background: rgb(234,34,94);
-}
-
-.cssload-circle-4 {
-    height: 43px;
-    width: 43px;
-    background: rgb(237,91,53);
-}
-
-.cssload-circle-5 {
-    height: 29px;
-    width: 29px;
-    background: rgb(245,181,46);
-}
-
-.cssload-circle-6 {
-    height: 14px;
-    width: 14px;
-    background: rgb(129,197,64);
-}
-
-.cssload-circle-7 {
-    height: 7px;
-    width: 7px;
-    background: rgb(0,163,150);
-}
-
-.cssload-circle-8 {
-    height: 4px;
-    width: 4px;
-    background: rgb(22,116,188);
-}
-
-.cssload-circle-1,
-.cssload-circle-2,
-.cssload-circle-3,
-.cssload-circle-4,
-.cssload-circle-5,
-.cssload-circle-6,
-.cssload-circle-7,
-.cssload-circle-8 {
-    border-bottom: none;
-    border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-    -o-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-    -ms-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-    animation-name: cssload-spin;
-    -o-animation-name: cssload-spin;
-    -ms-animation-name: cssload-spin;
-    -webkit-animation-name: cssload-spin;
-    -moz-animation-name: cssload-spin;
-    animation-duration: 2000ms;
-    -o-animation-duration: 2000ms;
-    -ms-animation-duration: 2000ms;
-    -webkit-animation-duration: 2000ms;
-    -moz-animation-duration: 2000ms;
-    animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    -ms-animation-timing-function: linear;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-
-
-@keyframes cssload-spin {
-    from {
-        transform: rotate(0deg);
+    .sk-cube-grid .sk-cube {
+        width: 33%;
+        height: 33%;
+        background-color: #4D7CFE;
+        float: left;
+        -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+        animation: sk-cubeGridScaleDelay 0.5s infinite ease-in-out;
     }
 
-    to {
-        transform: rotate(360deg);
+    .sk-cube-grid .sk-cube1 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+
+    .sk-cube-grid .sk-cube2 {
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+    }
+
+    .sk-cube-grid .sk-cube3 {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+
+    .sk-cube-grid .sk-cube4 {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    .sk-cube-grid .sk-cube5 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+
+    .sk-cube-grid .sk-cube6 {
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+    }
+
+    .sk-cube-grid .sk-cube7 {
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+
+    .sk-cube-grid .sk-cube8 {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    .sk-cube-grid .sk-cube9 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
     }
 }
 
-@-o-keyframes cssload-spin {
-    from {
-        -o-transform: rotate(0deg);
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
     }
 
-    to {
-        -o-transform: rotate(360deg);
-    }
-}
-
-@-ms-keyframes cssload-spin {
-    from {
-        -ms-transform: rotate(0deg);
-    }
-
-    to {
-        -ms-transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes cssload-spin {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-
-    to {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@-moz-keyframes cssload-spin {
-    from {
-        -moz-transform: rotate(0deg);
-    }
-
-    to {
-        -moz-transform: rotate(360deg);
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
     }
 }
 
