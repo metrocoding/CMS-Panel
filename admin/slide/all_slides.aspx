@@ -69,7 +69,12 @@
             en = $("<li>").addClass("date").html(fo[i].end);
             pag = $("<li>").html(fo[i].target);
             ord = $("<li>").html(fo[i].order);
-            sho = $("<li>").html(fo[i].show);
+            if (fo[i].show == "True") {
+                sho = $("<li>").html("نمایش");
+            } else if (fo[i].show == "False") {
+                sho = $("<li>").html("عدم نمایش");
+            }
+            //sho = $("<li>").html(fo[i].show);
             edi = $("<li>").addClass("edit");
             anc = $("<a>").attr("target", "_blank").attr("href", "alter_slide.aspx?id=" + fo[i].id);
             edi.append(anc);

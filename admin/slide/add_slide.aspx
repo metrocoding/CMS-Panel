@@ -41,29 +41,29 @@
                     <div class="form">
                         <h2>افزودن اسلاید</h2>
 
-                        <div id="error" runat="server">   </div>
+                        <div id="error" runat="server"></div>
 
                         <div class="items item1">
                             <span class="title">عنوان </span>
-                            <input type="text" id="sli_title" runat="server" placeholder="فارسی وارد شود ..." autocomplete="off"/>
+                            <input type="text" id="sli_title" runat="server" placeholder="فارسی وارد شود ..." autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
                         <div class="items item2">
                             <span class="title">شروع نمایش </span>
-                            <input type="text" id="sli_start" runat="server" placeholder=" فرمت تاریخ : 1395/05/02 ..."  autocomplete="off"/>
+                            <input type="text" id="sli_start" runat="server" placeholder=" فرمت تاریخ : 1395/05/02 ..." autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
                         <div class="items item3">
                             <span class="title">پایان نمایش </span>
-                            <input type="text" id="sli_end" runat="server" placeholder=" فرمت تاریخ : 1395/05/02 ..."  autocomplete="off"/>
+                            <input type="text" id="sli_end" runat="server" placeholder=" فرمت تاریخ : 1395/05/02 ..." autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
                         <div class="items item4">
                             <span class="title">اولویت نمایش </span>
-                            <input type="text" id="sli_order" runat="server" placeholder="عدد از 1 تا 99 ..."  autocomplete="off"/>
+                            <input type="text" id="sli_order" runat="server" placeholder="عدد از 1 تا 99 ..." autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
@@ -87,7 +87,7 @@
                         <div class="items no_color no2">
                             <div class="switchmain">
                                 <label class="switch">
-                                    <input type="checkbox" id="show" runat="server" checked/>
+                                    <input type="checkbox" id="show" runat="server" checked />
                                     <span class="slider"></span>
                                 </label>
                                 وضعیت نمایش
@@ -103,7 +103,7 @@
                         </div>
 
                         <div class="items item8">
-                            <input class="greenbut" type="submit" value="افزودن" runat="server" onserverclick="add_click"/>
+                            <input class="greenbut" type="submit" value="افزودن" runat="server" onserverclick="add_click" />
                             <input class="redbut" type="submit" value="پاک کردن" runat="server" onserverclick="reset_click" />
                         </div>
 
@@ -114,15 +114,15 @@
                 </div>
             </div>
 
-        </div>
 
-    
+
+</div>
 
 
     </form>
 
 </body>
-    <script>
+<script>
     flag = 0;
 
     $(".headright > .menuswitch").click(function () {
@@ -141,4 +141,5 @@
         }
     })
 </script>
+
 </html>

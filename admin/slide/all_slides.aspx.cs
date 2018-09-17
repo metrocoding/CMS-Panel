@@ -26,7 +26,7 @@ public partial class admin_slide_all_slides : System.Web.UI.Page
         public int end;
         public int order;
         public string target;
-        public bool show;
+        public string show;
         public string pic;
         public string des;
 
@@ -114,7 +114,7 @@ public partial class admin_slide_all_slides : System.Web.UI.Page
             s1.end = Convert.ToInt32(ds.Tables[0].Rows[i][3]);
             s1.order = Convert.ToInt32(ds.Tables[0].Rows[i][4]);
             s1.target = ds.Tables[0].Rows[i][5].ToString();
-            s1.show = Convert.ToBoolean(ds.Tables[0].Rows[i][6]);
+            s1.show = (ds.Tables[0].Rows[i][6]).ToString();
             s1.pic = ds.Tables[0].Rows[i][7].ToString();
             s1.des = ds.Tables[0].Rows[i][8].ToString();
 
