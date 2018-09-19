@@ -1,10 +1,10 @@
 ﻿body {
-    transition:0.3s;
+    transition: 0.3s;
     margin: 0;
     direction: rtl;
     font-family: sam;
     color: #555;
-    padding: 0 315px 0 0;
+    padding: 60px 315px 0 0;
     background-color: #F9FBFD;
 }
 
@@ -13,13 +13,28 @@
     height: 60px;
     background: #716aca;
     padding: 0 15px;
-    position: relative;
+    position: fixed;
     z-index: 300;
+    top: 0;
+    width: -moz-available;
 }
 
 #content {
     transition: 0.3s;
+    position: relative;
     background-color: #F9FBFD;
-
 }
 
+
+#content>#time {
+    transition:0.3s;
+    position:fixed;
+    bottom:10px;
+    left:10px;
+    font-size:20px;
+    direction:ltr;
+    background-color:#333;
+    border-radius:3px;
+    color:#fff;
+    padding:5px 7px;
+}

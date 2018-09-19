@@ -35,21 +35,36 @@
     }
 
         .form > .items > input {
-            border: 1px solid #ddd;
+            transition: 0.3s;
             width: 100%;
-            border: 0 none;
+            background: #fff;
+            height: 40px;
+            text-indent: 10px;
+            font-family: sam;
+            border-radius: .25rem;
+            font-size: 13px;
+            border: 1px solid #ebedf2;
         }
 
+            .form > .items > input:focus {
+                transition: 0.3s;
+                border-color: #3e93ff;
+            }
+
         .form > .items > .title {
-            width: 100px;
-            height: 25px;
+            top: -27px;
+            color: #495057;
+            position: absolute;
             padding: 3px 7px;
-            top: -32px;
+            width: 100px;
             display: inline-block;
-            background: blue;
-            color: #fff;
-            text-align: center;
-            padding: 5px 5px;
+            height: 25px;
+            line-height: 25px;
+            right: 8px;
+            text-align: right;
+            font-family: sam;
+            border-radius: 3px 3px 0 0;
+            font-size: 15px;
         }
 
 

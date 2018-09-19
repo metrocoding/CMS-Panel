@@ -29,6 +29,10 @@
 
         <div id="content">
 
+
+            <div class="addressbar">/ مدیریت اسلاید / افزودن اسلاید</div>
+
+
             <div class="holder">
 
                 <div class="right">
@@ -114,32 +118,57 @@
                 </div>
             </div>
 
+            <div id="time"></div>
 
-
-</div>
+        </div>
 
 
     </form>
 
 </body>
+
 <script>
+
+
+
+
+
     flag = 0;
 
+
+
+    setInterval("timing()", 1000);
+
+    function timing() {
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var time = h + " : " + m;
+
+        $("#time").html(time);
+    }
+
     $(".headright > .menuswitch").click(function () {
+
         if (flag == 0) {
             $("#content>.holder>.right").addClass("close");
             $("#header").removeClass("res");
             $("#content>.holder>.center").removeClass("res");
-            $("body").css({ padding: "0 70px 0 0" });
+            $("body").css({ padding: "60px 70px 0 0" });
             flag = 1;
         } else if (flag == 1) {
             $("#content>.holder>.right").removeClass("close");
             $("#header").addClass("res");
             $("#content>.holder>.center").addClass("res");
-            $("body").css({ padding: "0 315px 0 0" });
+            $("body").css({ padding: "60px 315px 0 0" });
             flag = 0;
         }
     })
+
+
+
+
+
 </script>
 
 </html>
