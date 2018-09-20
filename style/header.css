@@ -114,6 +114,7 @@
     color: #444;
     line-height: 17px;
     font-size: 17px;
+    position:relative;
 }
 
     .leftmenu > li > .message > div.big:hover {
@@ -135,38 +136,43 @@
         }
 
 .leftmenu > li:nth-child(2) > .message > div.big > span.time {
-    top: -5px;
+    /*top: -5px;*/
 }
 
 .leftmenu > li:nth-child(2) > .message > div.big > h1 {
     width: 180px;
-    top: -20px;
+    /*top: -20px;*/
 }
 
 .leftmenu > li > .message > div.big > h1 {
     display: inline-block;
     margin: 0 5px;
     font-size: 15px;
-    position: relative;
-    top: -32px;
+    position: absolute;
+    top: 20px;
     font-weight: normal;
+    right: 65px;
 }
 
-.leftmenu > li > .message > div.big > span {
-    display: inline-block;
-    margin: 0 5px;
-    font-size: 13px;
-    position: relative;
-    top: -27px;
-    background: transparent;
-    color: #999;
-    right: 50px;
-    width: 180px;
-}
+    .leftmenu > li > .message > div.big > h1.name{
+        top:8px;
+    }
+
+    .leftmenu > li > .message > div.big > span {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 13px;
+        position: relative;
+        top: -27px;
+        background: transparent;
+        color: #999;
+        right: 50px;
+        width: 180px;
+    }
 
     .leftmenu > li > .message > div.big > span.time {
         font-size: 11px;
-        top: -22px;
+        top: 72%;
         color: #555;
         right: 0;
         width: 70px;
@@ -174,18 +180,24 @@
         text-align: left;
     }
 
-.leftmenu > li > .message > div.small > span {
-    float: left;
-    display: inline-block;
-    color: #eee;
-    font-size: 17px;
-    padding: 4px 5px 1px 5px;
-    background: #f3545d;
-    border-radius: 3px;
-    line-height: 19px;
-    position: relative;
-    top: -2px;
-}
+        .leftmenu > li > .message > div.big > span.mestext {
+            position: absolute;
+            top: 33px;
+            right: 65px;
+        }
+
+        .leftmenu > li > .message > div.small > span {
+            float: left;
+            display: inline-block;
+            color: #eee;
+            font-size: 17px;
+            padding: 4px 5px 1px 5px;
+            background: #f3545d;
+            border-radius: 3px;
+            line-height: 19px;
+            position: relative;
+            top: -2px;
+        }
 
 .leftmenu > li > .message > div.allmes:hover {
     transition: 0.3s;

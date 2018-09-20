@@ -37,13 +37,12 @@
             margin: 150px auto 0;
             box-shadow: 0 1px 11px rgba(0,0,0,.5);
             border-radius: 20px;
-            
         }
 
-            .form.see {
+            /*.form.see {
                 transition: 0.3s;
                 background-position: 0 510px;
-            }
+            }*/
 
             .form > h2 {
                 text-align: center;
@@ -55,8 +54,8 @@
                 margin: 20px auto;
                 border: 1px solid transparent;
                 display: block;
-                opacity:0.7;
-                border-radius:20px;
+                opacity: 0.7;
+                border-radius: 20px;
             }
 
             .form > .items {
@@ -175,7 +174,7 @@
             </div>
 
             <div class="items">
-                <input type="submit" value="ثبت نام" runat="server" />
+                <input type="submit" value="ثبت نام" runat="server" onserverclick="sign_click" />
             </div>
 
 
@@ -188,7 +187,7 @@
     </form>
 
 </body>
-    <script>
+<script>
 
     $(".form > .items > .pass").focus(function () {
         $(".form").addClass("see");

@@ -47,7 +47,7 @@
 
             </div>
         </div>
-
+        <div id="time"></div>
     </div>
 
 
@@ -55,31 +55,7 @@
 
 
 </body>
-    <script>
-    flag = 0;
 
-    setInterval("timing()", 1000);
-
-    function timing() {
-        var d = new Date();
-        var h = d.getHours();
-        var m = d.getMinutes();
-        var time = h + " : " + m;
-
-        $("#time").html(time);
-    }
-
-    $(".headright > .menuswitch").click(function () {
-        if (flag == 0) {
-            $("#content>.holder>.right").addClass("close");
-            $("body").css({ padding:"60px 70px 0 0"} );
-            flag = 1;
-        } else if (flag == 1) {
-            $("#content>.holder>.right").removeClass("close");
-            $("body").css({ padding: "60px 315px 0 0"} );
-            flag = 0;
-        }
-    })
-</script>
+<script src="../script/JavaScript.js"></script>
 </html>
 

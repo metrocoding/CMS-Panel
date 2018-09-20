@@ -43,7 +43,19 @@
 
             .form.see {
                 transition: .3s;
-                background-position: 0 431px;
+                background-position: 0 438px;
+                animation:bounce .1s infinite alternate;
+             
+            }
+
+            @keyframes bounce{
+        
+                0%{
+                    background-size: 400px;
+                }
+                100%{
+                    background-size: 402px;
+                }
             }
 
             .form > h2 {

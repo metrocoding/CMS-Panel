@@ -17,22 +17,22 @@
 
             <div class="big">
                 <img src="../../images/Micon/avatari.png" />
-                <h1>حسن معین</h1>
-                <span>چطوری یا نه؟ خرید...</span>
+                <h1 class="name">حسن معین</h1>
+                <span class="mestext">چطوری یا نه؟ خرید...</span>
                 <span class="time">54 دقیقه قبل</span>
             </div>
 
             <div class="big">
                 <img src="../../images/Micon/avatari.png" />
-                <h1>رستم حقی</h1>
-                <span>فردا روز بزرگیه برا...</span>
+                <h1 class="name">رستم حقی</h1>
+                <span class="mestext">فردا روز بزرگیه برا...</span>
                 <span class="time">15 ساعت قبل</span>
             </div>
 
             <div class="big">
                 <img src="../../images/Micon/avatari.png" />
-                <h1>حسین نادری</h1>
-                <span>بانک خون فردا 300 واحد...</span>
+                <h1 class="name">حسین نادری</h1>
+                <span class="mestext">بانک خون فردا 300 واحد...</span>
                 <span class="time">3روز قبل</span>
             </div>
 
@@ -89,3 +89,43 @@
 
 </ul>
 
+
+<script>
+    flag = 0;
+
+
+
+setInterval("timing()", 1000);
+
+function timing() {
+    var d = new Date();
+    var h = d.getHours();
+    if (h < 10) {
+        h = "0" + h
+    }
+    var m = d.getMinutes();
+    if (m < 10) {
+        m = "0" + m
+    }
+    var time = h + " : " + m;
+
+    $("#time").html(time);
+}
+
+$(".headright > .menuswitch").click(function () {
+
+    if (flag == 0) {
+        $("#content>.holder>.right").addClass("close");
+        $("#header").removeClass("res");
+        $("#content>.holder>.center").removeClass("res");
+        $("body").css({ padding: "60px 70px 0 0" });
+        flag = 1;
+    } else if (flag == 1) {
+        $("#content>.holder>.right").removeClass("close");
+        $("#header").addClass("res");
+        $("#content>.holder>.center").addClass("res");
+        $("body").css({ padding: "60px 315px 0 0" });
+        flag = 0;
+    }
+})
+</script>

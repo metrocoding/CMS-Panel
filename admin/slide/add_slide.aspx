@@ -18,6 +18,7 @@
     <link href="../../style/header.css" rel="stylesheet" />
     <link href="../../style/accardion.css" rel="stylesheet" />
     <link href="../../style/responsive.css" rel="stylesheet" />
+
 </head>
 <body>
 
@@ -108,7 +109,7 @@
 
                         <div class="items item8">
                             <input class="greenbut" type="submit" value="افزودن" runat="server" onserverclick="add_click" />
-                            <input class="redbut" type="submit" value="پاک کردن" runat="server" onserverclick="reset_click" />
+                            <input class="redbut" type="submit" value="پاک کردن" runat="server"  />
                         </div>
 
 
@@ -127,48 +128,5 @@
 
 </body>
 
-<script>
-
-
-
-
-
-    flag = 0;
-
-
-
-    setInterval("timing()", 1000);
-
-    function timing() {
-        var d = new Date();
-        var h = d.getHours();
-        var m = d.getMinutes();
-        var time = h + " : " + m;
-
-        $("#time").html(time);
-    }
-
-    $(".headright > .menuswitch").click(function () {
-
-        if (flag == 0) {
-            $("#content>.holder>.right").addClass("close");
-            $("#header").removeClass("res");
-            $("#content>.holder>.center").removeClass("res");
-            $("body").css({ padding: "60px 70px 0 0" });
-            flag = 1;
-        } else if (flag == 1) {
-            $("#content>.holder>.right").removeClass("close");
-            $("#header").addClass("res");
-            $("#content>.holder>.center").addClass("res");
-            $("body").css({ padding: "60px 315px 0 0" });
-            flag = 0;
-        }
-    })
-
-
-
-
-
-</script>
-
+        <script src="../../script/JavaScript.js"></script>
 </html>

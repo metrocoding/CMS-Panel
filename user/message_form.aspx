@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="message_form.aspx.cs" Inherits="user_message_form" %>
 
 <%@ Register Src="~/controls/admin_accar.ascx" TagPrefix="uc1" TagName="admin_accar" %>
+<%@ Register Src="~/controls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+
 
 
 <!DOCTYPE html>
@@ -21,7 +23,9 @@
 
     <form runat="server">
 
-        <div id="header"></div>
+        <div id="header">
+            <uc1:Header runat="server" ID="Header1" />
+        </div>
 
         <div id="content">
 
@@ -81,7 +85,7 @@
 
                 </div>
             </div>
-
+            <div id="time"></div>
         </div>
 
 
@@ -89,20 +93,7 @@
     </form>
 
 </body>
-    <script>
-    flag = 0;
-
-    $(".headright > .menuswitch").click(function () {
-        if (flag == 0) {
-            $("#content>.holder>.right").addClass("close");
-            $("body").css({ padding:"0 70px 0 0"} );
-            flag = 1;
-        } else if (flag == 1) {
-            $("#content>.holder>.right").removeClass("close");
-            $("body").css({ padding: "0 315px 0 0"} );
-            flag = 0;
-        }
-    })
-</script>
+  
+<script src="../script/JavaScript.js"></script>
 </html>
 

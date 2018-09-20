@@ -122,69 +122,69 @@ public partial class admin_slide_all_slides : System.Web.UI.Page
         }
 
 
-            //HtmlGenericControl ul = new HtmlGenericControl("ul");
-            //ul.Attributes["class"] = "items slidegrid";
+        //HtmlGenericControl ul = new HtmlGenericControl("ul");
+        //ul.Attributes["class"] = "items slidegrid";
 
-            //// pic
-            //HtmlGenericControl li_pic = new HtmlGenericControl("li");
-            //li_pic.Attributes["class"] = "pic";
+        //// pic
+        //HtmlGenericControl li_pic = new HtmlGenericControl("li");
+        //li_pic.Attributes["class"] = "pic";
 
-            //HtmlImage im = new HtmlImage();
-            //im.Src = "~/images/uploads/slides/full/" + ds.Tables[0].Rows[i][7];
-            //li_pic.Controls.Add(im);
+        //HtmlImage im = new HtmlImage();
+        //im.Src = "~/images/uploads/slides/full/" + ds.Tables[0].Rows[i][7];
+        //li_pic.Controls.Add(im);
 
-            ////title
-            //HtmlGenericControl li_title = new HtmlGenericControl("li");
-            //li_title.InnerHtml = ds.Tables[0].Rows[i][1].ToString();
+        ////title
+        //HtmlGenericControl li_title = new HtmlGenericControl("li");
+        //li_title.InnerHtml = ds.Tables[0].Rows[i][1].ToString();
 
-            ////start
-            //HtmlGenericControl li_start = new HtmlGenericControl("li");
-            //li_start.Attributes["class"] = "date";
-            //li_start.InnerHtml = ds.Tables[0].Rows[i][2].ToString();
+        ////start
+        //HtmlGenericControl li_start = new HtmlGenericControl("li");
+        //li_start.Attributes["class"] = "date";
+        //li_start.InnerHtml = ds.Tables[0].Rows[i][2].ToString();
 
-            ////end
-            //HtmlGenericControl li_end = new HtmlGenericControl("li");
-            //li_end.Attributes["class"] = "date";
-            //li_end.InnerHtml = ds.Tables[0].Rows[i][3].ToString();
+        ////end
+        //HtmlGenericControl li_end = new HtmlGenericControl("li");
+        //li_end.Attributes["class"] = "date";
+        //li_end.InnerHtml = ds.Tables[0].Rows[i][3].ToString();
 
-            ////page
-            //HtmlGenericControl li_page = new HtmlGenericControl("li");
-            //li_page.InnerHtml = ds.Tables[0].Rows[i][5].ToString();
+        ////page
+        //HtmlGenericControl li_page = new HtmlGenericControl("li");
+        //li_page.InnerHtml = ds.Tables[0].Rows[i][5].ToString();
 
-            ////order
-            //HtmlGenericControl li_order = new HtmlGenericControl("li");
-            //li_order.InnerHtml = ds.Tables[0].Rows[i][4].ToString();
+        ////order
+        //HtmlGenericControl li_order = new HtmlGenericControl("li");
+        //li_order.InnerHtml = ds.Tables[0].Rows[i][4].ToString();
 
-            ////show
-            //HtmlGenericControl li_show = new HtmlGenericControl("li");
-            //li_show.InnerHtml = ds.Tables[0].Rows[i][6].ToString();
+        ////show
+        //HtmlGenericControl li_show = new HtmlGenericControl("li");
+        //li_show.InnerHtml = ds.Tables[0].Rows[i][6].ToString();
 
-            ////edit
-            //HtmlGenericControl li_edit = new HtmlGenericControl("li");
-            //li_edit.Attributes["class"] = "edit";
+        ////edit
+        //HtmlGenericControl li_edit = new HtmlGenericControl("li");
+        //li_edit.Attributes["class"] = "edit";
 
-            //HtmlAnchor anc = new HtmlAnchor();
-            //anc.HRef = "alter_slide.aspx?id=" + ds.Tables[0].Rows[i][0];
-            //anc.Attributes["target"] = "_blank";
+        //HtmlAnchor anc = new HtmlAnchor();
+        //anc.HRef = "alter_slide.aspx?id=" + ds.Tables[0].Rows[i][0];
+        //anc.Attributes["target"] = "_blank";
 
-            //li_edit.Controls.Add(anc);
+        //li_edit.Controls.Add(anc);
 
-            ////delete
-            //HtmlGenericControl li_del = new HtmlGenericControl("li");
-            //li_del.Attributes["class"] = "del";
+        ////delete
+        //HtmlGenericControl li_del = new HtmlGenericControl("li");
+        //li_del.Attributes["class"] = "del";
 
-            //ul.Controls.Add(li_pic);
-            //ul.Controls.Add(li_title);
-            //ul.Controls.Add(li_start);
-            //ul.Controls.Add(li_end);
-            //ul.Controls.Add(li_page);
-            //ul.Controls.Add(li_order);
-            //ul.Controls.Add(li_show);
-            //ul.Controls.Add(li_edit);
-            //ul.Controls.Add(li_del);
+        //ul.Controls.Add(li_pic);
+        //ul.Controls.Add(li_title);
+        //ul.Controls.Add(li_start);
+        //ul.Controls.Add(li_end);
+        //ul.Controls.Add(li_page);
+        //ul.Controls.Add(li_order);
+        //ul.Controls.Add(li_show);
+        //ul.Controls.Add(li_edit);
+        //ul.Controls.Add(li_del);
 
-            //grid.Controls.Add(ul);
-        
+        //grid.Controls.Add(ul);
+
 
     }
 
