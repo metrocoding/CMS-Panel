@@ -21,42 +21,39 @@
         body {
             padding: 0;
             margin: 0;
-            background-color: #ff7700;
+            overflow-x:hidden;
+            background-color: #0099B4;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
             background-attachment: fixed;
             background-size: cover;
         }
 
         .form {
-            transition: .3s;
+            transition: .5s;
             width: 400px;
             height: 550px;
             background-color: #fff;
-            background-image: url("images/Micon/crowd.png");
+            background-image: url("images/Micon/pass.png"),url("images/Micon/id.png");
             background-repeat: no-repeat;
-            background-position: 0 600px;
-            background-size: 400px;
+            background-position: 35px 700px,35px 700px;
+            background-size: 64px;
             margin: 150px auto 0;
             box-shadow: 0 1px 11px rgba(0,0,0,.5);
             border-radius: 20px;
         }
 
             .form.see {
-                transition: .3s;
-                background-position: 0 438px;
-                animation:bounce .1s infinite alternate;
+                transition: .5s;
+                background-position: 35px 510px,35px 700px;
              
             }
 
-            @keyframes bounce{
-        
-                0%{
-                    background-size: 400px;
-                }
-                100%{
-                    background-size: 402px;
-                }
+            .form.see2 {
+                transition: .5s;
+                background-position: 35px 700px,35px 510px;
+             
             }
+
 
             .form > h2 {
                 text-align: center;
@@ -148,6 +145,32 @@
                 transform: scale(1.1) rotateZ(10deg);
             }
         }
+
+
+        .plane {
+            position: absolute;
+            z-index: -2;
+            width: 300px;
+            height: 100px;
+            background: url("images/Micon/plane.png") no-repeat;
+            background-size: 300px;
+            animation: fly 30s infinite ;
+            top: 75%;
+            left: -400px;
+        }
+
+        @keyframes fly {
+            0% {
+                top: 75%;
+                left: -400px;
+                
+            }
+
+            100% {
+                top: 40%;
+                left: 120%;
+            }
+        }
     </style>
 
 </head>
@@ -156,6 +179,8 @@
     <div class="cloud"></div>
 
     <div class="sun"></div>
+
+    <div class="plane"></div>
 
     <form>
 
@@ -199,11 +224,20 @@
 <script>
 
     $(".form > .items > .pass").focus(function () {
-        $(".form").addClass("see");
+        $(".form").removeClass("see2").addClass("see");
     })
 
     $(".form > .items > .pass").focusout(function () {
         $(".form").removeClass("see");
+    })
+
+
+    $(".form > .items > #log_user").focus(function () {
+        $(".form").removeClass("see").addClass("see2");
+    })
+
+    $(".form > .items > #log_user").focusout(function () {
+        $(".form").removeClass("see2");
     })
 
 </script>
