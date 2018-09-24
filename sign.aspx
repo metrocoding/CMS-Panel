@@ -6,20 +6,18 @@
 <html>
 <head>
     <title>ثبت نام</title>
-    <link href="../../style/fonts.css" rel="stylesheet" />
-    <link href="../../style/base.css" rel="stylesheet" />
-    <link href="../../style/2 panel.css" rel="stylesheet" />
-    <link href="../../style/form.css" rel="stylesheet" />
-    <link href="../../style/header.css" rel="stylesheet" />
-    <link href="../../style/accardion.css" rel="stylesheet" />
-    <link href="style/sign.css" rel="stylesheet" />
+   
+     <link href="style/fonts.css" rel="stylesheet" />
+    <link href="style/base.css" rel="stylesheet" />
+    <link href="style/form.css" rel="stylesheet" />
+
     <script src="script/jquery.js"></script>
 
     <style>
         body {
             padding: 0;
             margin: 0;
-            overflow-x:hidden;
+            overflow-x: hidden;
             background-color: #0099B4;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
             background-attachment: fixed;
@@ -43,18 +41,23 @@
             .form.see {
                 transition: .5s;
                 background-position: 35px 550px,35px 700px;
-             
             }
 
             .form.see2 {
                 transition: .5s;
                 background-position: 35px 700px,35px 550px;
-             
             }
 
             .form > h2 {
                 text-align: center;
                 text-indent: 0;
+            }
+
+            .form > #error {
+                text-indent: 20px;
+                width: 80%;
+                margin: 10px auto 40px;
+                color: #8bc34a;
             }
 
             .form > img {
@@ -145,14 +148,14 @@
             }
         }
 
-         .plane {
+        .plane {
             position: absolute;
             z-index: -2;
             width: 300px;
             height: 100px;
             background: url("images/Micon/plane.png") no-repeat;
             background-size: 300px;
-            animation: fly 30s infinite ;
+            animation: fly 30s infinite;
             top: 75%;
             left: -400px;
         }
@@ -161,7 +164,6 @@
             0% {
                 top: 75%;
                 left: -400px;
-                
             }
 
             100% {
@@ -178,7 +180,7 @@
 
         <div class="sun"></div>
 
-            <div class="plane"></div>
+        <div class="plane"></div>
 
 
 
@@ -192,8 +194,8 @@
             <div id="error" runat="server"></div>
 
             <div class="items">
-                <span class="title">آدرس ایمیل</span>
-                <input type="text" id="sign_user" runat="server" placeholder="فارسی وارد شود ..." />
+                <span class="title">نام کاربری</span>
+                <input type="text" id="sign_user" runat="server" placeholder="نام کاربری ..." />
                 <span class="error"></span>
             </div>
 
@@ -225,7 +227,7 @@
 </body>
 <script>
 
-      $(".form > .items > .pass").focus(function () {
+    $(".form > .items > .pass").focus(function () {
         $(".form").removeClass("see2").addClass("see");
     })
 

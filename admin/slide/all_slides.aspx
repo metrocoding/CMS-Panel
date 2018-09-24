@@ -64,7 +64,8 @@
             ul = $("<ul>").addClass("items slidegrid");
             im = $("<li>").addClass("pic");
             img = $("<img>").attr("src", "../../images/uploads/slides/full/" + fo[i].pic);
-            tit = $("<li>").html(fo[i].title);
+            tit = $("<li>");
+            spa = $("<span>").html(fo[i].title);
             sta = $("<li>").addClass("date").html(fo[i].start);
             en = $("<li>").addClass("date").html(fo[i].end);
             pag = $("<li>").html(fo[i].target);
@@ -82,6 +83,7 @@
             del = $("<li>").addClass("del");
 
             $(".grid").append(ul);
+            tit.append(spa);
             ul.append(im).append(tit).append(sta).append(en).append(pag).append(ord).append(sho).append(edi).append(del);
             im.append(img);
         }

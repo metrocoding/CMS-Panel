@@ -8,12 +8,10 @@
 
     <title>ورود به سایت</title>
 
-    <link href="../../style/fonts.css" rel="stylesheet" />
-    <link href="../../style/base.css" rel="stylesheet" />
-    <link href="../../style/2 panel.css" rel="stylesheet" />
-    <link href="../../style/form.css" rel="stylesheet" />
-    <link href="../../style/header.css" rel="stylesheet" />
-    <link href="../../style/accardion.css" rel="stylesheet" />
+    <link href="style/fonts.css" rel="stylesheet" />
+    <link href="style/base.css" rel="stylesheet" />
+    <link href="style/form.css" rel="stylesheet" />
+
     <script src="script/jquery.js"></script>
 
 
@@ -67,6 +65,13 @@
                 display: block;
             }
 
+            .form > #error {
+                text-indent: 20px;
+                width: 80%;
+                margin: 10px auto 40px;
+                color: #8bc34a;
+            }
+
             .form > .items {
                 transition: 0.3s;
                 width: 80%;
@@ -95,7 +100,7 @@
                 transition: .3s;
                 color: blue;
                 font-size: 14px;
-                margin-right: 10%;
+                margin-right: 11%;
                 margin-bottom: 20px;
                 display: inline-block;
             }
@@ -182,7 +187,7 @@
 
     <div class="plane"></div>
 
-    <form>
+    <form runat="server">
 
 
         <div class="form">
@@ -208,7 +213,7 @@
             <span class="forget">بازیابی رمز عبور</span>
 
             <div class="items">
-                <input type="submit" value="ورود" runat="server" />
+                <input type="submit" value="ورود" runat="server" onserverclick="log_click"/>
             </div>
 
 

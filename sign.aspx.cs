@@ -32,7 +32,7 @@ public partial class sign : System.Web.UI.Page
 
         cmd.Parameters.AddWithValue("@uname",sign_user.Value);
         cmd.Parameters.AddWithValue("@pass", sign_pass.Value);
-        cmd.Parameters.Add("@reetvalue", SqlDbType.Int).Direction = ParameterDirection.Output;
+        cmd.Parameters.Add("@retvalue", SqlDbType.Int).Direction = ParameterDirection.Output;
 
         try
         {
@@ -50,6 +50,7 @@ public partial class sign : System.Web.UI.Page
         if (result == 0)
         {
             error.InnerHtml = "نام کاربری تکراری است";
+            error.Style.Add("color", "red");
         }
         else if (result == 1)
         {
