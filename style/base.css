@@ -4,7 +4,7 @@
     direction: rtl;
     font-family: sam;
     color: #555;
-    padding: 60px 315px 0 0;
+    padding: 0 315px 0 0;
     background-color: #F9FBFD;
 }
 
@@ -13,10 +13,8 @@
     height: 60px;
     background: #716aca;
     padding: 0 15px;
-    position: fixed;
+    position:relative;
     z-index: 300;
-    top: 0;
-    width: -moz-available;
 }
 
 #content {

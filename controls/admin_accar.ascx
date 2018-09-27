@@ -24,9 +24,8 @@
         </label>
 
         <div class="content">
-            <a href="add_slide.aspx">افزودن آیتم </a>
-            <a href="all_slides.aspx">مشاهده آیتم ها </a>
-            <a href="all_slides.aspx">تغییر و حذف </a>
+            <a href="add_slide.aspx">افزودن  </a>
+            <a href="all_slides.aspx">مشاهده  </a>
         </div>
 
     </li>
@@ -39,9 +38,9 @@
         </label>
 
         <div class="content">
-            <a href="#">افزودن آیتم </a>
-            <a href="#">مشاهده آیتم ها </a>
-            <a href="#">تغییر و حذف </a>
+            <a href="#">افزودن  </a>
+            <a href="#">مشاهده  </a>
+            <a href="#">ویرایش </a>
         </div>
 
     </li>
@@ -55,9 +54,9 @@
         </label>
 
         <div class="content">
-            <a href="#">افزودن آیتم </a>
-            <a href="#">مشاهده آیتم ها </a>
-            <a href="#">تغییر و حذف </a>
+            <a href="#">افزودن  </a>
+            <a href="#">مشاهده  </a>
+            <a href="#">ویرایش </a>
         </div>
 
     </li>
@@ -71,9 +70,9 @@
         </label>
 
         <div class="content">
-            <a href="#">افزودن آیتم </a>
-            <a href="#">مشاهده آیتم ها </a>
-            <a href="#">تغییر و حذف </a>
+            <a href="#">افزودن  </a>
+            <a href="#">مشاهده  </a>
+            <a href="#">ویرایش </a>
         </div>
 
     </li>
@@ -87,9 +86,9 @@
         </label>
 
         <div class="content">
-            <a href="#">افزودن آیتم </a>
-            <a href="#">مشاهده آیتم ها </a>
-            <a href="#">تغییر و حذف </a>
+            <a href="#">افزودن  </a>
+            <a href="#">مشاهده  </a>
+            <a href="#">ویرایش </a>
         </div>
 
     </li>

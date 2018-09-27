@@ -19,10 +19,9 @@
 #content > .holder > .right > .proinfo {
     transition: 0.3s;
     margin-bottom: 10px;
-    
     height: 180px;
     border-bottom: 1px solid #ccc;
-    overflow:hidden;
+    overflow: hidden;
 }
 
     #content > .holder > .right > .proinfo > img {
@@ -120,7 +119,7 @@
             .right > #accardion > li > input:checked + label {
                 transition: 0.3s;
                 display: block;
-                color: #9A9A9A;
+                color: #4D7CFE;
                 height: 30px;
                 padding: 6px 25px;
                 text-indent: 20px;
@@ -129,6 +128,7 @@
                 background-image: url("../images/Micon/up.png");
                 background-position: 20px center;
                 background-size: 11px;
+                border-top: 1px solid #4D7CFE;
             }
 
                 .right > #accardion > li > input:checked + label > .material-icons {
@@ -138,10 +138,17 @@
 
             .right > #accardion > li > input:checked ~ .content {
                 transition: 0.3s;
-                height: 112px;
-                margin-top: 0;
+                height: inherit;
                 padding-top: 15px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #4D7CFE;
             }
+
+                .right > #accardion > li > input:checked ~ .content > a {
+                    transition: .3s;
+                    height: 25px;
+                    padding: 5px 0;
+                }
 
         .right > #accardion > li > label:hover {
             transition: 0.3s;
@@ -179,7 +186,7 @@
             padding-top: 0;
             transition: 0.3s;
             background-color: #F7F7F7;
-            height: 0;
+            height: inherit;
         }
 
             .right > #accardion > li > .content > a:hover {
@@ -190,8 +197,13 @@
                 background-size: 5px;
             }
 
+            .right > #accardion > li > .content > a.choose {
+                border-right: 5px solid #4D7CFE;
+                color: #4D7CFE;
+            }
+
             .right > #accardion > li > .content > a {
-                transition: 0.2s;
+                transition: 0.3s;
                 background: url("../images/Micon/dot.png") no-repeat 270px center;
                 background-size: 5px;
                 display: block;
@@ -201,7 +213,9 @@
                 text-decoration: none;
                 color: #9A9A9A;
                 text-indent: 60px;
-                padding: 5px 0;
+                padding: 0;
+                height: 0;
+                overflow: hidden;
                 border-right: 0 solid #4D7CFE;
             }
 
@@ -244,27 +258,21 @@
         margin: 0;
     }
 
-    #content > .holder > .right.close > .proinfo > div {
-        transition:0;
-        margin: 4px 0px;
-        right: -1px;
-        top: -19px;
-        color: transparent;
+
+
+    #content > .holder > .right.close > .proinfo > div:hover > .material-icons {
+        right: 100px;
+        color: #fff;
     }
 
-#content > .holder > .right.close > .proinfo > div:hover>i{
-    transition:0.3s;
-    color:#fff;
-}
-
-#content > .holder > .right.close > .proinfo > div > .material-icons {
-    transition: 0.3s;
-    top: 4px;
-    right: 21px;
-    height: 24px;
-    width: 24px;
-    color: #9a9a9a;
-}
+    #content > .holder > .right.close > .proinfo > div > .material-icons {
+        transition: 0.3s;
+        top: 4px;
+        right: 21px;
+        height: 24px;
+        width: 24px;
+        color: #9a9a9a;
+    }
 
 
 /*part two*/
@@ -285,9 +293,7 @@
 
     .right.close > #accardion > li > input:checked ~ .content {
         transition: 0.3s;
-        height: 0;
-        margin-top: 0;
-        padding-top: 0;
+        padding: 15px 0;
     }
 
     .right.close > #accardion > li > label {
@@ -300,6 +306,11 @@
     height: 250px;
 }
 
+    #content > .holder > .right.close > .proinfo > div:hover {
+        transition: 0.3s;
+        color: #ffffff;
+    }
+
     #content > .holder > .right.close > .proinfo > div {
         transition: 0.3s;
         display: block;
@@ -311,7 +322,10 @@
         padding: 4px 10px;
         border-radius: 0;
         text-align: center;
+        color: transparent;
     }
+
+
 
 .right.close > #accardion > li > label:hover {
     transition: 0.3s;
@@ -328,11 +342,18 @@
 }
 
 
+.right.close > #accardion > li > input:checked ~ .content > a {
+    transition: .3s;
+    text-indent: 0px;
+    width: 70px;
+    text-align: center;
+}
 
+.right.close > #accardion > li > .content > a:hover {
+    border-right: 0 none;
+}
 
-
-
-
-
-
-
+.right.close > #accardion > li > .content > a.choose {
+    border-right:0 none;
+    color: #4D7CFE;
+}

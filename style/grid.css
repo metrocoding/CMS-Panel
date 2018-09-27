@@ -74,7 +74,17 @@
 
 .grid > .items.slidegrid > li:nth-child(2) {
     width: 190px;
+    position: relative;
+    top:-9px;
+    overflow: hidden;
 }
+
+    .grid > .items.slidegrid > li:nth-child(2) > span {
+        width: -moz-max-content;
+        display: inline-block;
+    }
+
+    
 
 .grid > .items.slidegrid > li:nth-child(3) {
     width: 90px;

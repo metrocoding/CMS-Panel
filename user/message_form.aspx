@@ -16,14 +16,23 @@
     <link href="../../style/form.css" rel="stylesheet" />
     <link href="../../style/header.css" rel="stylesheet" />
     <link href="../../style/accardion.css" rel="stylesheet" />
+    <link href="../style/responsive.css" rel="stylesheet" />
     <script src="../script/jquery.js"></script>
 
+    <style>
+        @media screen and (max-width:980px) {
+            .items > input[type="file"] + label {
+                transition: 0.3s;
+                width: 110px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <form runat="server">
 
-        <div id="header">
+        <div id="header" class="res">
             <uc1:Header runat="server" ID="Header1" />
         </div>
 
@@ -35,21 +44,21 @@
                     <uc1:admin_accar runat="server" ID="admin_accar" />
                 </div>
 
-                <div class="center">
+                <div class="center res">
                     <div class="form">
                         <h2>ارسال پیام</h2>
 
-                        <div id="error" runat="server"> پیام شخصی</div>
+                        <div id="error" runat="server"></div>
 
                         <div class="items item14">
                             <span class="title">ارسال به</span>
-                            <input type="text" id="mes_contact" runat="server" placeholder="نام کاربری گیرنده ..." autocomplete="off"/>
+                            <input type="text" id="mes_contact" runat="server" placeholder="نام کاربری گیرنده ..." autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
                         <div class="items item15">
                             <span class="title">عنوان پیام</span>
-                            <input type="text" id="mes_title" runat="server" placeholder="موضوع پیام ..." autocomplete="off"/>
+                            <input type="text" id="mes_title" runat="server" placeholder="موضوع پیام ..." autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
@@ -75,8 +84,8 @@
                         </div>
 
                         <div class="items item8">
-                            <input type="submit" value="ارسال" runat="server" onserverclick="send_mes"/>
-                            <input type="submit" value="پاک کردن" runat="server"  onserverclick="clear_form"/>
+                            <input type="submit" value="ارسال" runat="server" onserverclick="send_mes" />
+                            <input type="submit" value="پاک کردن" runat="server" onserverclick="clear_form" />
                         </div>
 
 
@@ -93,7 +102,7 @@
     </form>
 
 </body>
-  
+
 <script src="../script/JavaScript.js"></script>
 </html>
 

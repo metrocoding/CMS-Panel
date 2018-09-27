@@ -31,8 +31,6 @@
         <div id="content">
 
 
-            <div class="addressbar">/ مدیریت اسلاید / افزودن اسلاید</div>
-
 
             <div class="holder">
 
@@ -109,7 +107,7 @@
 
                         <div class="items item8">
                             <input class="greenbut" type="submit" value="افزودن" runat="server" onserverclick="add_click" />
-                            <input class="redbut" type="submit" value="پاک کردن" runat="server"  />
+                            <input class="redbut" type="submit" value="پاک کردن" runat="server" />
                         </div>
 
 
@@ -128,5 +126,12 @@
 
 </body>
 
-        <script src="../../script/JavaScript.js"></script>
+<script src="../../script/JavaScript.js"></script>
+
+    <script>
+        $("#ch0").prop("checked", true);
+        $(".right > #accardion > li:eq(0) > .content > a").removeClass("choose");
+        $(".right > #accardion > li:eq(0) > .content > a:eq(0)").addClass("choose");
+    </script>
+
 </html>

@@ -1,27 +1,4 @@
-﻿#content > .addressbar {
-    width: 500px;
-    height: 30px;
-    margin: 35px 35px 0 0;
-    background-image: url('../images/Micon/home.png');
-    background-size: 25px;
-    background-position: 475px center;
-    background-repeat: no-repeat;
-    text-indent: 27px;
-    line-height: 34px;
-}
-
-    #content > .addressbar>i{
-        display:none;
-    }
-
-
-
-
-
-
-
-
-    #content > .holder {
+﻿    #content > .holder {
         transition: 0.3s;
         /*width: 1360px;
     height:900px;*/
@@ -48,17 +25,14 @@
         background-position: bottom;
     }
 
-
-
-
-
+         
 
     #content > .holder > .center {
         transition: 0.3s;
         width: 1000px;
         padding: 7px;
         border-radius: 3px;
-        margin: 35px;
+        margin: 35px auto;
         background: #fff;
         border-radius: 3px;
         box-shadow: 0 1px 11px rgba(0,0,0,.15);

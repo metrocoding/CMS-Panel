@@ -18,6 +18,13 @@
     <link href="../../style/accardion.css" rel="stylesheet" />
     <script src="../../script/jquery.js"></script>
     <link href="../../style/responsive.css" rel="stylesheet" />
+    <script src="../../script/jquery.keyframes.min.js"></script>
+
+    <style>
+        .grid > .items.slidegrid > li:nth-child(2) > span {
+        width: -webkit-max-content;
+    }
+    </style>
 
     <script>
         fo = [];
@@ -68,7 +75,7 @@
             spa = $("<span>").html(fo[i].title);
             sta = $("<li>").addClass("date").html(fo[i].start);
             en = $("<li>").addClass("date").html(fo[i].end);
-            pag = $("<li>").html(fo[i].target);
+            pag = $("<li>").html(fo[i].target.replace("صفحه",""));
             ord = $("<li>").html(fo[i].order);
             if (fo[i].show == "True") {
                 sho = $("<li>").html("نمایش");
@@ -158,4 +165,6 @@
 </body>
 
 <script src="../../script/JavaScript.js"></script>
+
+
 </html>

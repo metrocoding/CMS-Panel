@@ -26,6 +26,8 @@
     .form > .items.item13,
     .form > .items.item1,
     .form > .items.item3,
+    .form > .items.item14,
+    .form > .items.item16,
     .form > .items.item5 {
         width: 35%;
         margin: 10px 5% 40px 0;
@@ -39,6 +41,8 @@
     .form > .items.item12,
     .form > .items.item2,
     .form > .items.item4,
+    .form > .items.item15,
+    .form > .items.item17,
     .form > .items.item6 {
         width: 35%;
         margin: 10px 2.5% 40px 0;
@@ -163,7 +167,7 @@
 
     .form > .items > input[type="file"] + label {
         transition: 0.3s;
-        width: 100%;
+        width: 110px;
     }
 
     .form > .items.item13 > input[type="file"] + label,
@@ -243,13 +247,24 @@
     .grid > .items.header > li:nth-child(7) {
         margin-right: 20px;
     }
+
+    .form > .items.item14,
+    .form > .items.item15,
+    .form > .items.item16,
+    .form > .items.item17
+    {
+        width: 90%;
+        margin: 10px 5% 40px 0;
+    }
+
+
 }
 
 
 
 
 
-@media screen and (max-width:615px) {
+@media screen and (max-width:630px) {
 
 
     body {
@@ -281,7 +296,7 @@
 
 @media screen and (max-width:515px) {
 
-    #header > .leftmenu > li:nth-child(4) {
+    #header > .leftmenu > li:nth-child(1) {
         display: none;
     }
 
@@ -292,14 +307,14 @@
 
 @media screen and (max-width:465px) {
 
-    #header > .leftmenu > li:nth-child(2) {
+    #header > .leftmenu > li:nth-child(4) {
         display: none;
     }
 }
 
 @media screen and (max-width:415px) {
 
-    #header > .leftmenu > li:nth-child(1) {
+    #header > .leftmenu > li:nth-child(3) {
         display: none;
     }
 }
