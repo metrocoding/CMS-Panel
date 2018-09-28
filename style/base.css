@@ -4,18 +4,32 @@
     direction: rtl;
     font-family: sam;
     color: #555;
-    padding: 0 315px 0 0;
+    padding: 60px 315px 0 0;
     background-color: #F9FBFD;
 }
 
-#header {
-    transition: 0.3s;
+.head {
     height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: #716aca;
-    padding: 0 15px;
-    position:relative;
-    z-index: 300;
+    right:0;
+    z-index: 250;
 }
+
+    .head>div{
+        float:right;
+    }
+
+    #header {
+        transition: 0.3s;
+        height: 60px;
+        background: #716aca;
+        padding: 0 15px;
+        position: relative;
+        z-index: 300;
+    }
 
 #content {
     transition: 0.3s;

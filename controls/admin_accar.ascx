@@ -1,9 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="admin_accar.ascx.cs" Inherits="controls_admin_accar" %>
 
 
-<div class="headright">
-    <div class="menuswitch"></div>
-</div>
+
 
 <div class="proinfo">
     <img src="../../images/Micon/smi.jpg" /><h2 id="user_name" runat="server">فاطمه رادمنش</h2>

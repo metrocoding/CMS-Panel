@@ -102,9 +102,18 @@
 </head>
 <body>
 
-    <div id="header" class="res">
-        <uc1:Header runat="server" ID="Header1" />
-    </div>
+    <div class="head">
+
+            <div class="headright">
+                <div class="menuswitch"></div>
+            </div>
+
+
+
+            <uc1:Header runat="server" ID="Header1" />
+
+
+        </div>
     <div id="content">
 
         <div id="time"></div>

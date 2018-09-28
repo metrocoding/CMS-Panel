@@ -22,9 +22,18 @@
 </head>
 <body>
 
-    <div id="header">
-        <uc1:Header runat="server" ID="Header1" />
-    </div>
+    <div class="head">
+
+            <div class="headright">
+                <div class="menuswitch"></div>
+            </div>
+
+
+
+            <uc1:Header runat="server" ID="Header1" />
+
+
+        </div>
     <div id="content">
 
         <div class="holder">
