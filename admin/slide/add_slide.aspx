@@ -20,9 +20,94 @@
     <link href="../../style/responsive.css" rel="stylesheet" />
 
 </head>
+<script>
+    window.onload = function () {
+
+    }
+
+
+    r = /^a*/;
+    r = /^a+/;
+
+    r = /^.{3,5}$/;
+
+    r = /^a\/$/;
+
+
+    r = /^\w(\w|\d|_|-|\.){0,20}@(\d|\w)(\w|\d|-){0,20}(\.\w{2,4}){1,3}$/;
+
+
+    r1 = /^.{8,}$/;
+    r2 = /\d/;
+    r3 = /[A-Z]/;
+
+
+    r1 = /^[\u0600-\u06ff]([\u0600-\u06ff]|\s|\d){3,50}$/;
+
+    r2 = /^1(3|4)\d{2}\/\d{2}\/\d{2}$/;
+
+    
+
+    function validate_form() {
+        er = 0;
+        error.innerHTML = "";
+
+        //title
+        if (!r1.test(sli_title.value)) {
+            er = 1;
+            $("#sli_title").parent().addClass("er");
+            error.innerHTML = "خطای عنوان";
+        } else {
+            $("#sli_title").parent().addClass("ok");
+            $("#sli_title").parent().removeClass("er");
+        }
+
+        //start
+        if (!r2.test(sli_start.value)) {
+            er = 1;
+            $("#sli_start").parent().addClass("er");
+            error.innerHTML +="<br>" + "خطای تاریخ شروع";
+        } else {
+            $("#sli_start").parent().addClass("ok");
+            $("#sli_start").parent().removeClass("er");
+        }
+
+        //end
+        if (!r2.test(sli_end.value)) {
+            er = 1;
+            $("#sli_end").parent().addClass("er");
+            error.innerHTML +="<br>" + "خطای تاریخ پایان";
+        } else {
+            $("#sli_end").parent().addClass("ok");
+            $("#sli_end").parent().removeClass("er");
+        }
+
+
+        //order
+        if (sli_order.value<0 && sli_order.value>100) {
+            er = 1;
+            $("#sli_order").parent().addClass("er");
+            error.innerHTML +="<br>" + "خطای اولویت";
+        } else {
+            $("#sli_order").parent().addClass("ok");
+            $("#sli_order").parent().removeClass("er");
+        }
+
+
+
+        if (er == 0) {
+            return true;
+        }
+        if (er == 1) {
+            return false;
+        }
+    }
+
+
+</script>
 <body>
 
-    <form runat="server">
+    <form runat="server" onsubmit="return validate_form()">
 
         <div class="head">
 
@@ -55,13 +140,13 @@
 
                         <div id="error" runat="server"></div>
 
-                        <div class="items item1">
+                        <div class="items item1 ">
                             <span class="title">عنوان </span>
                             <input type="text" id="sli_title" runat="server" placeholder="فارسی وارد شود ..." autocomplete="off" />
                             <span class="error"></span>
                         </div>
 
-                        <div class="items item2">
+                        <div class="items item2 ">
                             <span class="title">شروع نمایش </span>
                             <input type="text" id="sli_start" runat="server" placeholder=" فرمت تاریخ : 1395/05/02 ..." autocomplete="off" />
                             <span class="error"></span>
@@ -137,10 +222,10 @@
 
 <script src="../../script/JavaScript.js"></script>
 
-    <script>
-        $("#ch0").prop("checked", true);
-        $(".right > #accardion > li:eq(0) > .content > a").removeClass("choose");
-        $(".right > #accardion > li:eq(0) > .content > a:eq(0)").addClass("choose");
-    </script>
+<script>
+    $("#ch0").prop("checked", true);
+    $(".right > #accardion > li:eq(0) > .content > a").removeClass("choose");
+    $(".right > #accardion > li:eq(0) > .content > a:eq(0)").addClass("choose");
+</script>
 
 </html>

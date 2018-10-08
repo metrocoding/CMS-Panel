@@ -40,7 +40,7 @@ public partial class admin_slide_add_slide : System.Web.UI.Page
 
         //get file============
 
-        string fileName = "";
+        string fileName = "avatari.png";
         string fileExt = "";
 
         HttpPostedFile file = Request.Files["sli_pic"];
@@ -68,8 +68,8 @@ public partial class admin_slide_add_slide : System.Web.UI.Page
         SqlCommand command = new SqlCommand("insert into slide values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", connection);
 
         command.Parameters.AddWithValue("@p1", sli_title.Value);
-        command.Parameters.AddWithValue("@p2", sli_start.Value);
-        command.Parameters.AddWithValue("@p3", sli_end.Value);
+        command.Parameters.AddWithValue("@p2", sli_start.Value.Replace("/",""));
+        command.Parameters.AddWithValue("@p3", sli_end.Value.Replace("/", ""));
         command.Parameters.AddWithValue("@p4", sli_order.Value);
         command.Parameters.AddWithValue("@p5", sli_page.Value);
         command.Parameters.AddWithValue("@p6", show.Checked);

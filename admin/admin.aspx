@@ -51,6 +51,9 @@
                     <h2>افزودن اسلاید</h2>
 
 
+                    <div id="welcom" runat="server"></div>
+
+
                 </div>
 
 

@@ -28,11 +28,11 @@
         transition:0.3s;
         width: 85%;
         margin: 10px 60px 40px auto;
-        /*background: #333;*/
         padding: 4px;
         border-radius: 3px;
         position: relative;
     }
+
         /*new=============================start==========================*/
         .form > .items.item1,
         .form > .items.item4,
@@ -327,4 +327,39 @@ input:checked + .slider {
 .switchmain {
     direction: ltr;
     font-size: 15px;
+}
+
+
+.form > .items.ok > .error {
+    background: url("../images/Micon/check.png")no-repeat; 
+    background-size:21px;
+    height: 21px;
+    width: 21px;
+    position: absolute;
+    top: 16px;
+    left: 5px;
+}
+
+.form > .items.er > .error {
+    background: url("../images/Micon/del.png")no-repeat;
+    background-size: 21px;
+    height: 21px;
+    width: 21px;
+    position: absolute;
+    top: 16px;
+    left: 5px;
+}
+
+.form > .items.er > input{
+    animation:error .5s infinite alternate;
+}
+
+@keyframes error{
+    0% {
+        border: 1px solid #ebedf2;
+
+    }
+    100% {
+        border: 1px solid red;
+    }
 }

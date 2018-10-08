@@ -73,8 +73,21 @@
             img = $("<img>").attr("src", "../../images/uploads/slides/full/" + fo[i].pic);
             tit = $("<li>");
             spa = $("<span>").html(fo[i].title);
-            sta = $("<li>").addClass("date").html(fo[i].start);
-            en = $("<li>").addClass("date").html(fo[i].end);
+
+            starting = fo[i].start;
+            year = starting.toString().substring(0, 4);
+            month = starting.toString().substring(4, 6);
+            day = starting.toString().substring(6, 8);
+            start = year + "/" + month + "/" + day;
+            sta = $("<li>").addClass("date").html(start);
+
+            endi = fo[i].end;
+            year = endi.toString().substring(0, 4);
+            month = endi.toString().substring(4, 6);
+            day = endi.toString().substring(6, 8);
+            end = year + "/" + month + "/" + day;
+            en = $("<li>").addClass("date").html(end);
+
             pag = $("<li>").html(fo[i].target.replace("صفحه",""));
             ord = $("<li>").html(fo[i].order);
             if (fo[i].show == "True") {
