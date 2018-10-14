@@ -18,11 +18,12 @@
     <link href="../../style/header.css" rel="stylesheet" />
     <link href="../../style/accardion.css" rel="stylesheet" />
     <link href="../../style/responsive.css" rel="stylesheet" />
+    
 
 </head>
 <script>
     window.onload = function () {
-
+      accartune(0,0)
     }
 
 
@@ -46,7 +47,7 @@
 
     r2 = /^1(3|4)\d{2}\/\d{2}\/\d{2}$/;
 
-    
+
 
     function validate_form() {
         er = 0;
@@ -66,7 +67,7 @@
         if (!r2.test(sli_start.value)) {
             er = 1;
             $("#sli_start").parent().addClass("er");
-            error.innerHTML +="<br>" + "خطای تاریخ شروع";
+            error.innerHTML += "<br>" + "خطای تاریخ شروع";
         } else {
             $("#sli_start").parent().addClass("ok");
             $("#sli_start").parent().removeClass("er");
@@ -76,7 +77,7 @@
         if (!r2.test(sli_end.value)) {
             er = 1;
             $("#sli_end").parent().addClass("er");
-            error.innerHTML +="<br>" + "خطای تاریخ پایان";
+            error.innerHTML += "<br>" + "خطای تاریخ پایان";
         } else {
             $("#sli_end").parent().addClass("ok");
             $("#sli_end").parent().removeClass("er");
@@ -84,10 +85,10 @@
 
 
         //order
-        if (sli_order.value<0 && sli_order.value>100) {
+        if (sli_order.value < 0 && sli_order.value > 100) {
             er = 1;
             $("#sli_order").parent().addClass("er");
-            error.innerHTML +="<br>" + "خطای اولویت";
+            error.innerHTML += "<br>" + "خطای اولویت";
         } else {
             $("#sli_order").parent().addClass("ok");
             $("#sli_order").parent().removeClass("er");
@@ -219,13 +220,8 @@
     </form>
 
 </body>
+    <script src="../../script/JavaScript.js"></script>
 
-<script src="../../script/JavaScript.js"></script>
 
-<script>
-    $("#ch0").prop("checked", true);
-    $(".right > #accardion > li:eq(0) > .content > a").removeClass("choose");
-    $(".right > #accardion > li:eq(0) > .content > a:eq(0)").addClass("choose");
-</script>
 
 </html>

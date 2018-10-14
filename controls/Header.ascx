@@ -17,7 +17,7 @@
 
 
      <li class="pic">
-        <img src="../../images/Micon/smi2.jpg" id="asdf" style="width: 100%; border-radius: 100%;" />
+        <img src="../../images/Micon/smi2.jpg" runat="server" id="user_avatar" style="width: 100%; border-radius: 100%;" />
     
         <div class="message pic">
             <div>پروفایل</div>

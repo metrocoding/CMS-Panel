@@ -4,7 +4,7 @@
 
 
 <div class="proinfo">
-    <img src="../../images/Micon/smi.jpg" /><h2 id="user_name" runat="server">فاطمه رادمنش</h2>
+    <img id="user_avatar" runat="server" src="../../images/Micon/smi.jpg" /><h2 id="user_name" runat="server">فاطمه رادمنش</h2>
     <span id="admin_level" runat="server">ادمین کل</span><div>پروفایل<i class="material-icons">account_box</i></div>
     <div>ویرایش<i class="material-icons">edit</i></div>
     <div>تنظیمات<i class="material-icons">settings</i></div>
@@ -22,8 +22,8 @@
         </label>
 
         <div class="content">
-            <a href="add_slide.aspx">افزودن  </a>
-            <a href="all_slides.aspx">مشاهده  </a>
+            <a runat="server" href="~/admin/slide/add_slide.aspx">افزودن  </a>
+            <a runat="server" href="~/admin/slide/all_slides.aspx">مشاهده  </a>
         </div>
 
     </li>

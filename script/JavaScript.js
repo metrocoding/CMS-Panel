@@ -97,3 +97,10 @@ function backright() {
     hi = $("#content > .holder > .right").height();
     //$("#content > .holder > .right").css({ "background-position": "0 " + hi + "px" });
 }
+
+//accardion select===========================================
+function accartune(main,sub) {
+    $("#ch" + main).prop("checked", true);
+    //$(".right > #accardion > li:eq(" + main + ") > .content > a").removeClass("choose");
+    $(".right > #accardion > li:eq(" + main + ") > .content > a:eq(" + sub +")").addClass("choose");
+}

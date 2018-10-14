@@ -48,7 +48,7 @@
 
             <div class="center">
                 <div class="form">
-                    <h2>افزودن اسلاید</h2>
+                    <h2>صفحه ادمین</h2>
 
 
                     <div id="welcom" runat="server"></div>

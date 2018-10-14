@@ -33,7 +33,7 @@
         $(document).ready(function () {
 
             fill_items(0, 200);
-
+            accartune(0, 1);
         })
 
         function fill_items(start, count) {
