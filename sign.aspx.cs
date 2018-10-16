@@ -31,7 +31,7 @@ public partial class sign : System.Web.UI.Page
         cmd.CommandType = CommandType.StoredProcedure;
 
         cmd.Parameters.AddWithValue("@uname",sign_user.Value);
-        cmd.Parameters.AddWithValue("@pass", sign_pass.Value);
+        cmd.Parameters.AddWithValue("@pass", myFile.hash(sign_pass.Value));
         cmd.Parameters.Add("@retvalue", SqlDbType.Int).Direction = ParameterDirection.Output;
 
         try
