@@ -1,7 +1,7 @@
 # CMS-Panel
 Asp.Net CMS Admin Panel in Persian Language and Format on VisualStudio with Microsoft SQL database
 
- **language**: C# T-Sql in backend & Html CSS JS jQuery in frontend
+ **language**: `C# T-Sql` in backend & `Html CSS JS jQuery` in frontend
 
 ## in this CMS Panel you can:
 1. add photo to database with details
