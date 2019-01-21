@@ -1,5 +1,5 @@
 # CMS-Panel
-Asp.Net CMS Admin Panel in Persian Language and Format on VisualStudio with Microsoft SQL database
+Asp.Net CMS Admin Panel in **Persian** Language and Format on VisualStudio with Microsoft SQL database
 
  **language**: `C# T-Sql` in backend & `Html CSS JS jQuery` in frontend
 
